@@ -1,30 +1,77 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import { useDisplay } from "vuetify/lib/framework.mjs";
+import { computed, ref } from "vue";
+import ProfileCard from "./components/ProfileCard.vue";
+import SocialLinkButton from "./components/SocialLinkButton.vue";
+import TechIconsCard from "./components/TechIconsCard.vue";
+import WireRedCard from "./components/WireRedCard.vue";
+import YourAge from "./components/YourAge.vue";
+import GitHub from "./components/GitHub.vue";
+import EnglishLevel from "./components/EnglishLevel.vue";
+
+const { lg } = useDisplay();
+
+const isLargeDisplay = computed(() => {
+  return lg.value;
+});
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+  <v-app>
+    <v-main>
+      <v-container class="pt-12" style="max-width: 56rem">
+        <!--Top Section with big box and 2 on the next column-->
+        <v-row dense style="">
+          <v-col cols="12" lg="8">
+            <profile-card :height="isLargeDisplay ? '280' : ''" />
+          </v-col>
+          <v-col cols="12" lg="4">
+            <!-- Sub Section with language option and social links -->
+            <v-row dense>
+              <v-col cols="4" lg="12">
+                <v-sheet :height="isLargeDisplay ? '140' : '130'"></v-sheet>
+              </v-col>
+              <v-col cols="4" lg="6" :order="isLargeDisplay ? '' : 'first'">
+                <social-link-button
+                  height="130"
+                  icon="mdi-linkedin"
+                  color="indigo"
+                  link="https://www.linkedin.com/in/baaltrodrigo/"
+                />
+              </v-col>
+              <v-col cols="4" lg="6" order="12">
+                <social-link-button
+                  height="130"
+                  icon="mdi-twitter"
+                  color="light-blue"
+                  link="https://twitter.com/RodrigoBaalt"
+                />
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
+        <!-- Second section, tech stack and more information about me -->
+        <v-row dense>
+          <v-col cols="8" lg="3">
+            <tech-icons-card />
+          </v-col>
+          <v-col cols="12" lg="6" :order="isLargeDisplay ? '' : 'first'">
+            <git-hub height="280" />
+          </v-col>
+          <v-col cols="4" lg="3">
+            <v-row dense>
+              <v-col cols="12">
+                <your-age :height="isLargeDisplay ? '135' : '140'" />
+              </v-col>
+              <v-col cols="12">
+                <english-level :height="isLargeDisplay ? '135' : '140'" />
+              </v-col>
+            </v-row>
+          </v-col>
+          <v-col cols="4"></v-col>
+        </v-row>
+        <v-row></v-row>
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
