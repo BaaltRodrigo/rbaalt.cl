@@ -8,7 +8,7 @@
     :color="color"
     :height="height"
   >
-    <v-icon size="56">{{ icon }}</v-icon>
+    <v-icon size="72">{{ icon }}</v-icon>
   </v-btn>
 </template>
 
