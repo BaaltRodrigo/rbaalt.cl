@@ -1,6 +1,6 @@
 <template>
   <v-card
-    height="100%"
+    :height="height"
     class="rounded-xl text-center pa-8"
     variant="tonal"
     color="green"
@@ -12,6 +12,13 @@
 
 <script setup>
 import { ref, computed } from "vue";
+
+const props = defineProps({
+  height: {
+    type: String,
+    default: "100%",
+  },
+});
 
 const birthDate = ref(new Date("1995-11-07"));
 
