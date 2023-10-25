@@ -1,5 +1,5 @@
 <template>
-  <v-card variant="tonal" class="rounded-xl" height="100%">
+  <v-card variant="tonal" class="rounded-xl py-2" height="100%">
     <v-card-item>
       <v-row align="center">
         <v-col cols="3" v-for="icon in icons" :key="'tech-tool-' + icon">
