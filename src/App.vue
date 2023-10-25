@@ -6,6 +6,7 @@ import SocialLinkButton from "./components/SocialLinkButton.vue";
 import TechIconsCard from "./components/TechIconsCard.vue";
 import WireRedCard from "./components/WireRedCard.vue";
 import YourAge from "./components/YourAge.vue";
+import GitHub from "./components/GitHub.vue";
 
 const { lg } = useDisplay();
 
@@ -57,7 +58,7 @@ const isLargeDisplay = computed(() => {
             <tech-icons-card />
           </v-col>
           <v-col cols="12" lg="6" :order="isLargeDisplay ? '' : 'first'">
-            <wire-red-card message="Card to github profile" />
+            <git-hub height="280" />
           </v-col>
           <v-col cols="4" lg="3">
             <v-row dense>
