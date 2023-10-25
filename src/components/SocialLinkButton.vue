@@ -4,17 +4,20 @@
     variant="tonal"
     target="_blank"
     class="rounded-xl"
-    :color="color"
     block
-    height="100%"
-    min-height="150"
+    :color="color"
+    :height="height"
   >
-    <v-icon size="84">{{ icon }}</v-icon>
+    <v-icon size="56">{{ icon }}</v-icon>
   </v-btn>
 </template>
 
 <script setup>
 const props = defineProps({
+  height: {
+    type: String,
+    default: "100%",
+  },
   icon: {
     type: String,
     required: true,
