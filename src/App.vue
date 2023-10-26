@@ -4,10 +4,11 @@ import { computed, ref } from "vue";
 import ProfileCard from "./components/ProfileCard.vue";
 import SocialLinkButton from "./components/SocialLinkButton.vue";
 import TechIconsCard from "./components/TechIconsCard.vue";
-import WireRedCard from "./components/WireRedCard.vue";
 import YourAge from "./components/YourAge.vue";
 import GitHub from "./components/GitHub.vue";
 import EnglishLevel from "./components/EnglishLevel.vue";
+import AboutMe from "./components/AboutMe.vue";
+import WhereAmI from "./components/WhereAmI.vue";
 
 const { lg } = useDisplay();
 
@@ -19,7 +20,7 @@ const isLargeDisplay = computed(() => {
 <template>
   <v-app>
     <v-main>
-      <v-container class="pt-12" style="max-width: 56rem">
+      <v-container class="pt-8" style="max-width: 56rem">
         <!--Top Section with big box and 2 on the next column-->
         <v-row dense style="">
           <v-col cols="12" lg="8">
@@ -68,9 +69,22 @@ const isLargeDisplay = computed(() => {
               </v-col>
             </v-row>
           </v-col>
-          <v-col cols="4"></v-col>
         </v-row>
-        <v-row></v-row>
+        <!-- Third section. About me, the map and work in progress... -->
+        <v-row dense>
+          <v-col cols="12" sm="7" :order="isLargeDisplay ? 'last' : 'first'">
+            <about-me :height="isLargeDisplay ? '280' : ''" />
+          </v-col>
+          <v-col cols="12" sm="5">
+            <v-row dense>
+              <v-col cols="12" sm="12">
+                <where-am-i :height="isLargeDisplay ? '280' : '140'" />
+                <!-- Use the commented section below when you have more info to show -->
+                <!-- <where-am-i :height="isLargeDisplay ? '135' : '140'" /> -->
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
       </v-container>
     </v-main>
   </v-app>
