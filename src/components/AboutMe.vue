@@ -7,7 +7,7 @@
   >
     <v-container>
       <v-toolbar-title>{{ $t("about.title") }}</v-toolbar-title>
-      <p class="text-subtitle-1 my-2">{{ $t("about.description") }}}</p>
+      <p class="text-subtitle-1 my-2">{{ $t("about.description") }}</p>
       <p class="text-subtitle-1">
         {{ $t("about.interests") }}
       </p>
