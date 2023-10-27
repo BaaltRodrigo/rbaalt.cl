@@ -5,7 +5,7 @@
     variant="tonal"
     color="green"
   >
-    <p class="text-subtitle-1">My Age</p>
+    <p class="text-subtitle-1">{{ $t("age.title") }}</p>
     <v-card-title class="text-h4">{{ currentAge }}</v-card-title>
   </v-card>
 </template>

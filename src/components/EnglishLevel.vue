@@ -5,7 +5,7 @@
     :height="height"
     color="deep-purple-accent-4"
   >
-    <p class="text-subtitle-1">English level</p>
+    <p class="text-subtitle-1">{{ $t("english.title") }}</p>
     <v-card-title class="text-h4">B2</v-card-title>
   </v-card>
 </template>
