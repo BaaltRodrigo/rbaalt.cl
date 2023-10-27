@@ -10,10 +10,10 @@ import EnglishLevel from "./components/EnglishLevel.vue";
 import AboutMe from "./components/AboutMe.vue";
 import WhereAmI from "./components/WhereAmI.vue";
 
-const { lg } = useDisplay();
+const { md, lg, xl } = useDisplay();
 
 const isLargeDisplay = computed(() => {
-  return lg.value;
+  return md.value || lg.value || xl.value;
 });
 </script>
 
@@ -23,16 +23,16 @@ const isLargeDisplay = computed(() => {
       <v-container class="pt-8" style="max-width: 56rem">
         <!--Top Section with big box and 2 on the next column-->
         <v-row dense style="">
-          <v-col cols="12" lg="8">
+          <v-col cols="12" md="8">
             <profile-card :height="isLargeDisplay ? '280' : ''" />
           </v-col>
-          <v-col cols="12" lg="4">
+          <v-col cols="12" md="4">
             <!-- Sub Section with language option and social links -->
             <v-row dense>
-              <v-col cols="4" lg="12">
+              <v-col cols="4" md="12">
                 <v-sheet :height="isLargeDisplay ? '140' : '130'"></v-sheet>
               </v-col>
-              <v-col cols="4" lg="6" :order="isLargeDisplay ? '' : 'first'">
+              <v-col cols="4" md="6" :order="isLargeDisplay ? '' : 'first'">
                 <social-link-button
                   height="130"
                   icon="mdi-linkedin"
@@ -40,7 +40,7 @@ const isLargeDisplay = computed(() => {
                   link="https://www.linkedin.com/in/baaltrodrigo/"
                 />
               </v-col>
-              <v-col cols="4" lg="6" order="12">
+              <v-col cols="4" md="6">
                 <social-link-button
                   height="130"
                   icon="mdi-twitter"
@@ -53,13 +53,13 @@ const isLargeDisplay = computed(() => {
         </v-row>
         <!-- Second section, tech stack and more information about me -->
         <v-row dense>
-          <v-col cols="8" lg="3">
+          <v-col cols="8" md="3">
             <tech-icons-card />
           </v-col>
-          <v-col cols="12" lg="6" :order="isLargeDisplay ? '' : 'first'">
+          <v-col cols="12" md="6" :order="isLargeDisplay ? '' : 'first'">
             <git-hub height="280" />
           </v-col>
-          <v-col cols="4" lg="3">
+          <v-col cols="4" md="3">
             <v-row dense>
               <v-col cols="12">
                 <your-age :height="isLargeDisplay ? '135' : '140'" />
@@ -72,12 +72,12 @@ const isLargeDisplay = computed(() => {
         </v-row>
         <!-- Third section. About me, the map and work in progress... -->
         <v-row dense>
-          <v-col cols="12" sm="7" :order="isLargeDisplay ? 'last' : 'first'">
+          <v-col cols="12" md="7" :order="isLargeDisplay ? 'last' : 'first'">
             <about-me :height="isLargeDisplay ? '280' : ''" />
           </v-col>
-          <v-col cols="12" sm="5">
+          <v-col cols="12" md="5">
             <v-row dense>
-              <v-col cols="12" sm="12">
+              <v-col cols="12">
                 <where-am-i :height="isLargeDisplay ? '280' : '140'" />
                 <!-- Use the commented section below when you have more info to show -->
                 <!-- <where-am-i :height="isLargeDisplay ? '135' : '140'" /> -->
