@@ -1,7 +1,7 @@
 <template>
   <v-card variant="tonal" class="rounded-xl" height="100%">
     <v-toolbar color="transparent">
-      <v-toolbar-title> What do I use? </v-toolbar-title>
+      <v-toolbar-title>{{ $t("techIcons.title") }}</v-toolbar-title>
     </v-toolbar>
     <v-card-item>
       <v-row justify="center" class="text-center">

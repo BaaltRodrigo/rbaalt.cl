@@ -9,6 +9,7 @@ import GitHub from "./components/GitHub.vue";
 import EnglishLevel from "./components/EnglishLevel.vue";
 import AboutMe from "./components/AboutMe.vue";
 import WhereAmI from "./components/WhereAmI.vue";
+import LanguageChange from "./components/LanguageChange.vue";
 
 const { md, lg, xl } = useDisplay();
 
@@ -30,7 +31,9 @@ const isLargeDisplay = computed(() => {
             <!-- Sub Section with language option and social links -->
             <v-row dense>
               <v-col cols="4" md="12">
-                <v-sheet :height="isLargeDisplay ? '140' : '130'"></v-sheet>
+                <language-change
+                  :height="isLargeDisplay ? '140' : '130'"
+                ></language-change>
               </v-col>
               <v-col cols="4" md="6" :order="isLargeDisplay ? '' : 'first'">
                 <social-link-button

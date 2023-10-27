@@ -16,7 +16,7 @@
           <template #prepend>
             <v-icon size="28">mdi-github</v-icon>
           </template>
-          <v-toolbar-title>Check on GitHub!</v-toolbar-title>
+          <v-toolbar-title>{{ $t("github.title") }}</v-toolbar-title>
         </v-toolbar>
       </v-img>
     </v-card>

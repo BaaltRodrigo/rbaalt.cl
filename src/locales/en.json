@@ -1,0 +1,28 @@
+{
+  "profile": {
+    "welcome": "Hi! I'm Rodrigo",
+    "shortDescription": " +5 years as a full stack developer using Laravel + Vue.js to deliver user friendly solutions.",
+    "workingAt": "Currently working at Facilita"
+  },
+  "age": {
+    "title": "My age"
+  },
+  "english": {
+    "title": "English level"
+  },
+  "techIcons": {
+    "title": "What do I use?"
+  },
+  "github": {
+    "title": "Check on GitHub!"
+  },
+  "about": {
+    "title": "More about me",
+    "description": "My name is Rodrigo, I'm a developer from Chile. I discover programming at the university and that unfold a world of infinite possibilities.",
+    "interests": "I'm a Judoka, I practice this sport since 2015 and also love to read fantasy books. Big fan of The Stormlight Archive. And sometimes I built model kits of Gundams."
+  },
+  "language": {
+    "title": "Language",
+    "hint": "Click to switch"
+  }
+}
