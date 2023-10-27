@@ -7,7 +7,7 @@
   "age": {
     "title": "Mi edad"
   },
-  "englishLevel": {
+  "english": {
     "title": "Nivel de ingles"
   },
   "techIcons": {
@@ -18,7 +18,7 @@
   },
   "about": {
     "title": "Mas sobre mi",
-    "presentation": "Me llamo Rodrigo, soy programador en Chile. Descubri el mundo de la programacion en la universidad y se me abrio un mundo de posibilidades infinitas.",
-    "hobbies": "Tambien soy judoka, practico Judo desde el 2015 y me encantan los libros de fantasia. Un gran fan de la saga El Archivo de las Tormentas. A veces armo modelos a escala de Gundams."
+    "description": "Me llamo Rodrigo, soy programador en Chile. Descubri el mundo de la programacion en la universidad y se me abrio un mundo de posibilidades infinitas.",
+    "interests": "Tambien soy judoka, practico Judo desde el 2015 y me encantan los libros de fantasia. Un gran fan de la saga El Archivo de las Tormentas. A veces armo modelos a escala de Gundams."
   }
 }

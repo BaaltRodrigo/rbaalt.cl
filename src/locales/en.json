@@ -7,7 +7,7 @@
   "age": {
     "title": "My age"
   },
-  "englishLevel": {
+  "english": {
     "title": "English level"
   },
   "techIcons": {
@@ -18,7 +18,7 @@
   },
   "about": {
     "title": "More about me",
-    "presentation": "My name is Rodrigo, I'm a developer from Chile. I discover programming at the university and that unfold a world of infinite possibilities.",
-    "hobbies": "I'm a Judoka, I practice this sport since 2015 and also love to read fantasy books. Big fan of The Stormlight Archive. And sometimes I built model kits of Gundams."
+    "description": "My name is Rodrigo, I'm a developer from Chile. I discover programming at the university and that unfold a world of infinite possibilities.",
+    "interests": "I'm a Judoka, I practice this sport since 2015 and also love to read fantasy books. Big fan of The Stormlight Archive. And sometimes I built model kits of Gundams."
   }
 }
