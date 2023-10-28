@@ -4,13 +4,7 @@
     target="_blank"
     class="rounded-xl text-decoration-none"
   >
-    <v-card
-      @click=""
-      :height="height"
-      variant="tonal"
-      color="red"
-      class="rounded-xl"
-    >
+    <v-card @click="" :height="height">
       <v-img cover width="100%" src="coding-guy.gif" class="text-black">
         <v-toolbar color="transparent" class="px-2">
           <template #prepend>
