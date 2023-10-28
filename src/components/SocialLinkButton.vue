@@ -1,13 +1,5 @@
 <template>
-  <v-btn
-    :href="link"
-    variant="tonal"
-    target="_blank"
-    class="rounded-xl"
-    block
-    :color="color"
-    :height="height"
-  >
+  <v-btn :href="link" target="_blank" block :color="color" :height="height">
     <v-icon size="72">{{ icon }}</v-icon>
   </v-btn>
 </template>

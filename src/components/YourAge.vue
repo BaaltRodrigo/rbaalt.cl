@@ -1,10 +1,5 @@
 <template>
-  <v-card
-    :height="height"
-    class="rounded-xl text-center pa-8"
-    variant="tonal"
-    color="green"
-  >
+  <v-card :height="height" class="text-center pa-8" color="green-lighten-2">
     <p class="text-subtitle-1">{{ $t("age.title") }}</p>
     <v-card-title class="text-h4">{{ currentAge }}</v-card-title>
   </v-card>

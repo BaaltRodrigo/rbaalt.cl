@@ -4,7 +4,7 @@
     target="_blank"
     class="rounded-xl"
   >
-    <v-card :height="height" variant="flat" class="rounded-xl">
+    <v-card :height="height">
       <v-img
         src="santiago.jpg"
         cover

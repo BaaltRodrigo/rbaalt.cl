@@ -1,5 +1,5 @@
 <template>
-  <v-card variant="tonal" class="rounded-xl" height="100%">
+  <v-card color="red-lighten-3" height="100%">
     <v-toolbar color="transparent">
       <v-toolbar-title>{{ $t("techIcons.title") }}</v-toolbar-title>
     </v-toolbar>

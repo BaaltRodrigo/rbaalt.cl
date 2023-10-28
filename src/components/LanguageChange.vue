@@ -1,8 +1,7 @@
 <template>
   <v-card
-    class="d-flex flex-column justify-center align-center rounded-xl px-2 text-center"
-    variant="tonal"
-    color="red"
+    class="d-flex flex-column justify-center align-center px-2 text-center"
+    color="red-lighten-3"
     :height="height"
     @click="changeLocale()"
   >
