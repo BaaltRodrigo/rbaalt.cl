@@ -1,18 +1,18 @@
 <template>
-  <v-card color="red-lighten-3" height="100%">
-    <v-toolbar color="transparent">
-      <v-toolbar-title>{{ $t("techIcons.title") }}</v-toolbar-title>
-    </v-toolbar>
-    <v-card-item>
-      <v-row justify="center" class="text-center">
-        <v-col cols="3" v-for="icon in icons" :key="'tech-tool-' + icon">
-          <v-icon size="28">{{ icon }}</v-icon>
-        </v-col>
-        <v-col cols="3">
-          <p class="text-h6">🥋</p>
-        </v-col>
-      </v-row>
-    </v-card-item>
+  <v-card
+    class="d-flex align-center justify-center inline-flex flex-wrap pa-4"
+    color="red-lighten-3"
+    height="100%"
+  >
+    <v-icon
+      class="mx-2"
+      v-for="icon in icons"
+      :key="'tech-tool-' + icon"
+      size="28"
+    >
+      {{ icon }}
+    </v-icon>
+    <p class="text-h6 mx-2">🥋</p>
   </v-card>
 </template>
 
