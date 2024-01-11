@@ -2,6 +2,7 @@
 import { useDisplay } from "vuetify/lib/framework.mjs";
 import { computed, watch } from "vue";
 import { useI18n } from "vue-i18n";
+import Experience from "./components/Experience.vue";
 import ProfileCard from "./components/ProfileCard.vue";
 import SocialLinkButton from "./components/SocialLinkButton.vue";
 import TechIconsCard from "./components/TechIconsCard.vue";
@@ -30,12 +31,14 @@ watch(
 // Get the locale from local storage. if not set, use default english
 const locale = localStorage.getItem("locale") || "en";
 i18n.locale.value = locale;
+
+console.log(i18n.tm("HOME.TAGS"));
 </script>
 
 <template>
   <v-app>
     <v-main class="bg-grey-darken-3">
-      <v-container class="pt-16" style="max-width: 56rem">
+      <v-container style="max-width: 56rem" class="pt-16">
         <!-- Presentation -->
         <section class="mt-16">
           <h1 class="text-h3">
@@ -55,6 +58,7 @@ i18n.locale.value = locale;
             prepend-icon="mdi-linkedin"
             href="https://www.linkedin.com/in/baaltrodrigo/"
             target="_blank"
+            append-icon="mdi-open-in-new"
           >
             LinkedIn
           </v-btn>
@@ -63,17 +67,41 @@ i18n.locale.value = locale;
             prepend-icon="mdi-github"
             href="https://github.com/BaaltRodrigo"
             target="_blank"
+            append-icon="mdi-open-in-new"
           >
             GitHub
           </v-btn>
         </section>
         <!-- Working experience -->
-        <section>
+        <section class="my-16">
           <span class="d-flex flex-wrap align-center mt-10 text-grey-lighten-2">
+            <h2 class="text-h5 mr-3">{{ $t("HOME.WORKING_EXPERIENCE") }}</h2>
             <v-icon>mdi-briefcase-variant-outline</v-icon>
-            <h2 class="text-h5 ml-3">{{ $t("HOME.WORKING_EXPERIENCE") }}</h2>
           </span>
           <!-- Timeline Here -->
+          <v-timeline
+            side="end"
+            density="compact"
+            align="start"
+            line-color="blue-grey-lighten-4"
+          >
+            <v-timeline-item
+              v-for="item in $tm('HOME.EXPERIENCES')"
+              fill-dot
+              dot-color="blue-grey-lighten-4"
+              hide-opposite
+              size="x-small"
+            >
+              <experience
+                :company="item.COMPANY"
+                :position="item.POSITION"
+                :start-date="item.START_DATE"
+                :end-date="item.END_DATE || null"
+                :description="item.DESCRIPTION"
+                :link="item.LINK"
+              />
+            </v-timeline-item>
+          </v-timeline>
         </section>
 
         <!--Top Section with big box and 2 on the next column-->
