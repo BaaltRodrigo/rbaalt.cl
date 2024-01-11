@@ -24,7 +24,7 @@ const isLargeDisplay = computed(() => {
 watch(
   () => i18n.locale.value,
   () => {
-    document.title = i18n.t("HOME.PAGE_TITLE");
+    document.title = i18n.t("HOME.META.PAGE_TITLE");
   }
 );
 
@@ -38,7 +38,7 @@ console.log(i18n.tm("HOME.TAGS"));
 <template>
   <v-app>
     <v-main class="bg-grey-darken-3">
-      <v-container style="max-width: 56rem" class="pt-16">
+      <v-container style="max-width: 45rem" class="pt-16">
         <!-- Presentation -->
         <section class="mt-16">
           <h1 class="text-h3">
