@@ -15,7 +15,7 @@
           </h3>
         </v-toolbar-title>
       </v-toolbar>
-      <video src="coding-guy-min.mp4" autoplay muted class="w-100" loop />
+      <video src="/coding-guy-min.mp4" autoplay muted class="w-100" loop />
     </v-card>
   </a>
 </template>
