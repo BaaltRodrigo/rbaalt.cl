@@ -1,4 +1,12 @@
 {
+  "HOME": {
+    "PAGE_TITLE": "Rodrigo Pizarro - Full Stack Developer de Chile",
+    "PAGE_DESCRIPTION": " como developer Full Stack desde Chile. Creando soluciones amigables para el usuario usando Vue.js y Laravel.",
+    "OPEN_TO_WORK": "Disponible para trabajar",
+    "SHORT_DESCRIPTION": "Short description of yourself",
+    "WELCOME": "Hey, soy Rodrigo",
+    "WORKING_EXPERIENCE": "Experiencia laboral"
+  },
   "profile": {
     "welcome": "Hola! Soy Rodrigo",
     "shortDescription": " +5 años como full stack usando Laravel y Vue.js para crear soluciones amigables para los usuarios.",

@@ -1,7 +1,15 @@
 {
+  "HOME": {
+    "OPEN_TO_WORK": "Open to work",
+    "PAGE_TITLE": "Rodrigo Pizarro - Full Stack Developer from Chile",
+    "PAGE_DESCRIPTION": "as a Full Stack Developer from Chile, I use Laravel and Vue.js to deliver user friendly solutions.",
+    "SHORT_DESCRIPTION": "Short description of yourself",
+    "WELCOME": "Hey, I'm Rodrigo",
+    "WORKING_EXPERIENCE": "Working experience"
+  },
   "profile": {
     "welcome": "Hi! I'm Rodrigo",
-    "shortDescription": " +5 years as a full stack developer using Laravel + Vue.js to deliver user friendly solutions.",
+    "shortDescription": "+5 years as a full stack developer using Laravel + Vue.js to deliver user friendly solutions.",
     "workingAt": "Currently working at Facilita"
   },
   "age": {
