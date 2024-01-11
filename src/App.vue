@@ -1,11 +1,13 @@
 <script setup>
 import { useDisplay } from "vuetify/lib/framework.mjs";
-import { computed, ref } from "vue";
+import { computed, watch} from "vue";
+import { useI18n } from "vue-i18n";
 import ProfileCard from "./components/ProfileCard.vue";
 import SocialLinkButton from "./components/SocialLinkButton.vue";
 import TechIconsCard from "./components/TechIconsCard.vue";
 import YourAge from "./components/YourAge.vue";
 import GitHub from "./components/GitHub.vue";
+import Hero from "./components/Hero.vue";
 import EnglishLevel from "./components/EnglishLevel.vue";
 import AboutMe from "./components/AboutMe.vue";
 import WhereAmI from "./components/WhereAmI.vue";
@@ -13,15 +15,30 @@ import LanguageChange from "./components/LanguageChange.vue";
 
 const { md, lg, xl } = useDisplay();
 
+const i18n = useI18n({ useScope: "global" });
+
 const isLargeDisplay = computed(() => {
   return md.value || lg.value || xl.value;
 });
+
+watch(
+  () => i18n.locale.value,
+  () => {
+    document.title = i18n.t("HOME.PAGE_TITLE");
+  }
+);
+
+// Get the locale from local storage. if not set, use default english
+const locale = localStorage.getItem("locale") || "en";
+i18n.locale.value = locale;
+
 </script>
 
 <template>
   <v-app>
     <v-main class="bg-grey-darken-3">
       <v-container class="pt-8" style="max-width: 56rem">
+        <Hero />
         <!--Top Section with big box and 2 on the next column-->
         <v-row dense>
           <v-col cols="12" md="8" class="expandable-reverse">
