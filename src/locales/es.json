@@ -4,32 +4,29 @@
     "GO_TO_PROJECT": "Ir al proyecto"
   },
   "HOME": {
-    "PAGE_TITLE": "Rodrigo Pizarro - Full Stack Developer de Chile",
-    "PAGE_DESCRIPTION": " como developer Full Stack desde Chile. Creando soluciones amigables para el usuario usando Vue.js y Laravel.",
+    "META": {
+      "TITLE": "Rodrigo Pizarro - Full Stack Developer de Chile",
+      "DESCRIPTION": " como developer Full Stack desde Chile. Creando soluciones amigables para el usuario usando Vue.js y Laravel."
+    },
     "OPEN_TO_WORK": "Disponible para trabajar",
     "SHORT_DESCRIPTION": "Short description of yourself",
     "WELCOME": "Hey, soy Rodrigo",
-    "WORKING_EXPERIENCE": "Experiencia laboral",
+    "WORKING_EXPERIENCE": "Experiencia laboral reciente",
     "EXPERIENCES": [
       {
         "COMPANY": "Facilita",
         "START_DATE": "2023-08-01",
         "END_DATE": "2023-08-01",
-        "POSITION": "Full Stack Developer",
-        "DESCRIPTION": "I'm part of the development team, working with Laravel and Vue.js to deliver user friendly solutions."
+        "POSITION": "Principal desarrollador Full Stack",
+        "DESCRIPTION": "Integrante del equipo de desarrollo encargado de realizar la migracion digital de la empresa. Responsable de la creacion de la plataforma web y optimizacion de los sistemas internos para mejorar el proceso de ventas."
       },
       {
-        "COMPANY": "Freelance",
-        "START_DATE": "2020-08-01",
-        "POSITION": "Full Stack Developer",
-        "DESCRIPTION": "I've worked with several clients, delivering solutions using Laravel and Vue.js.",
+        "COMPANY": "CronApp",
+        "START_DATE": "2022-05-01",
+        "END_DATE": "2023-09-01",
+        "POSITION": "Lider del equipo de desarrollo",
+        "DESCRIPTION": "Responsable del lanzamiento del primer prototipo funcional web y movil de CronApp. Disponibilizando la plataforma para su lanzamiento inicial a un grupo de control de 100 usuarios usando Google Cloud Platform",
         "LINK": "https://github.com/BaaltRodrigo"
-      },
-      {
-        "COMPANY": "Universidad de Santiago de Chile",
-        "START_DATE": "2020-08-01",
-        "POSITION": "Full Stack Developer",
-        "DESCRIPTION": "I've worked with the development team, delivering solutions using"
       }
     ]
   },

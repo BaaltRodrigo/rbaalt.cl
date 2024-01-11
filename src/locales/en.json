@@ -4,32 +4,29 @@
     "GO_TO_PROJECT": "Go to the project"
   },
   "HOME": {
+    "META": {
+      "TITLE": "Rodrigo Pizarro - Full Stack Developer from Chile",
+      "DESCRIPTION": "+5 years as a Full Stack Developer from Chile, I use Laravel and Vue.js to deliver user friendly solutions."
+    },
     "OPEN_TO_WORK": "Open to work",
-    "PAGE_TITLE": "Rodrigo Pizarro - Full Stack Developer from Chile",
-    "PAGE_DESCRIPTION": "as a Full Stack Developer from Chile, I use Laravel and Vue.js to deliver user friendly solutions.",
     "SHORT_DESCRIPTION": "Short description of yourself",
     "WELCOME": "Hey, I'm Rodrigo",
-    "WORKING_EXPERIENCE": "Working experience",
+    "WORKING_EXPERIENCE": "Recently working experience",
     "EXPERIENCES": [
       {
         "COMPANY": "Facilita",
         "START_DATE": "2020-08-01",
         "END_DATE": "2023-08-01",
         "POSITION": "Full Stack Developer",
-        "DESCRIPTION": "I'm part of the development team, working with Laravel and Vue.js to deliver user friendly solutions."
+        "DESCRIPTION": "Part of the developers that were in charge of the cloud migration of the principal product of the company. And built some of the internal control panels that improves the sales process."
       },
       {
-        "COMPANY": "Freelance",
-        "START_DATE": "2020-08-01",
-        "POSITION": "Full Stack Developer",
-        "DESCRIPTION": "I've worked with several clients, delivering solutions using Laravel and Vue.js.",
+        "COMPANY": "CronApp",
+        "START_DATE": "2022-05-01",
+        "END_DATE": "2023-09-01",
+        "POSITION": "Tech Lead",
+        "DESCRIPTION": "In charge of the development of the first version of the CronApp platform for web browsers and mobile devices. Using Google Cloud Plataform to serve this solution to over 100 users.",
         "LINK": "https://github.com/BaaltRodrigo"
-      },
-      {
-        "COMPANY": "Universidad de Santiago de Chile",
-        "START_DATE": "2020-08-01",
-        "POSITION": "Full Stack Developer",
-        "DESCRIPTION": "I've worked with the development team, delivering solutions using Laravel and Vue.js."
       }
     ]
   },
