@@ -5,14 +5,17 @@
     class="rounded-xl text-decoration-none"
   >
     <v-card @click="" :height="height">
-      <v-img cover width="100%" src="coding-guy.gif" class="text-black">
-        <v-toolbar color="transparent" class="px-2">
-          <template #prepend>
-            <v-icon size="28">mdi-github</v-icon>
-          </template>
-          <v-toolbar-title>{{ $t("github.title") }}</v-toolbar-title>
-        </v-toolbar>
-      </v-img>
+      <v-toolbar color="transparent" class="px-2 text-black" style="position: absolute;">
+        <template #prepend>
+          <v-icon size="28">mdi-github</v-icon>
+        </template>
+        <v-toolbar-title>
+          <h3 class="text-h6">
+            {{ $t("github.title") }}
+          </h3>
+        </v-toolbar-title>
+      </v-toolbar>
+      <video src="coding-guy-min.mp4" autoplay muted class="w-100" loop />
     </v-card>
   </a>
 </template>
