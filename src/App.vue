@@ -1,13 +1,12 @@
 <script setup>
 import { useDisplay } from "vuetify/lib/framework.mjs";
-import { computed, watch} from "vue";
+import { computed, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import ProfileCard from "./components/ProfileCard.vue";
 import SocialLinkButton from "./components/SocialLinkButton.vue";
 import TechIconsCard from "./components/TechIconsCard.vue";
 import YourAge from "./components/YourAge.vue";
 import GitHub from "./components/GitHub.vue";
-import Hero from "./components/Hero.vue";
 import EnglishLevel from "./components/EnglishLevel.vue";
 import AboutMe from "./components/AboutMe.vue";
 import WhereAmI from "./components/WhereAmI.vue";
@@ -31,14 +30,52 @@ watch(
 // Get the locale from local storage. if not set, use default english
 const locale = localStorage.getItem("locale") || "en";
 i18n.locale.value = locale;
-
 </script>
 
 <template>
   <v-app>
     <v-main class="bg-grey-darken-3">
-      <v-container class="pt-8" style="max-width: 56rem">
-        <Hero />
+      <v-container class="pt-16" style="max-width: 56rem">
+        <!-- Presentation -->
+        <section class="mt-16">
+          <h1 class="text-h3">
+            {{ $t("HOME.WELCOME") }}
+          </h1>
+          <h3
+            style="text-wrap: pretty"
+            class="font-weight-regular text-grey-lighten-2 mt-2 w-75"
+          >
+            {{ $t("profile.shortDescription") }}
+          </h3>
+        </section>
+        <!-- Social buttons -->
+        <section class="d-flex flex-wrap mt-3 mb-8">
+          <v-btn
+            class="expandable text-none"
+            prepend-icon="mdi-linkedin"
+            href="https://www.linkedin.com/in/baaltrodrigo/"
+            target="_blank"
+          >
+            LinkedIn
+          </v-btn>
+          <v-btn
+            class="expandable text-none mx-4"
+            prepend-icon="mdi-github"
+            href="https://github.com/BaaltRodrigo"
+            target="_blank"
+          >
+            GitHub
+          </v-btn>
+        </section>
+        <!-- Working experience -->
+        <section>
+          <span class="d-flex flex-wrap align-center mt-10 text-grey-lighten-2">
+            <v-icon>mdi-briefcase-variant-outline</v-icon>
+            <h2 class="text-h5 ml-3">{{ $t("HOME.WORKING_EXPERIENCE") }}</h2>
+          </span>
+          <!-- Timeline Here -->
+        </section>
+
         <!--Top Section with big box and 2 on the next column-->
         <v-row dense>
           <v-col cols="12" md="8" class="expandable-reverse">
@@ -126,6 +163,14 @@ i18n.locale.value = locale;
 </template>
 
 <style lang="css">
+.expandable {
+  transition: transform 0.1s ease-in-out;
+}
+
+.expandable:hover {
+  transform: scale(1.05);
+}
+
 .expandable-reverse {
   transition: transform 0.3s ease-in-out;
 }
