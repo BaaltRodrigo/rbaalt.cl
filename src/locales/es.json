@@ -1,11 +1,37 @@
 {
+  "GENERAL": {
+    "SHOW_MORE": "Ver mas",
+    "GO_TO_PROJECT": "Ir al proyecto"
+  },
   "HOME": {
     "PAGE_TITLE": "Rodrigo Pizarro - Full Stack Developer de Chile",
     "PAGE_DESCRIPTION": " como developer Full Stack desde Chile. Creando soluciones amigables para el usuario usando Vue.js y Laravel.",
     "OPEN_TO_WORK": "Disponible para trabajar",
     "SHORT_DESCRIPTION": "Short description of yourself",
     "WELCOME": "Hey, soy Rodrigo",
-    "WORKING_EXPERIENCE": "Experiencia laboral"
+    "WORKING_EXPERIENCE": "Experiencia laboral",
+    "EXPERIENCES": [
+      {
+        "COMPANY": "Facilita",
+        "START_DATE": "2023-08-01",
+        "END_DATE": "2023-08-01",
+        "POSITION": "Full Stack Developer",
+        "DESCRIPTION": "I'm part of the development team, working with Laravel and Vue.js to deliver user friendly solutions."
+      },
+      {
+        "COMPANY": "Freelance",
+        "START_DATE": "2020-08-01",
+        "POSITION": "Full Stack Developer",
+        "DESCRIPTION": "I've worked with several clients, delivering solutions using Laravel and Vue.js.",
+        "LINK": "https://github.com/BaaltRodrigo"
+      },
+      {
+        "COMPANY": "Universidad de Santiago de Chile",
+        "START_DATE": "2020-08-01",
+        "POSITION": "Full Stack Developer",
+        "DESCRIPTION": "I've worked with the development team, delivering solutions using"
+      }
+    ]
   },
   "profile": {
     "welcome": "Hola! Soy Rodrigo",
