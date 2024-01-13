@@ -12,6 +12,7 @@ import EnglishLevel from "./components/EnglishLevel.vue";
 import AboutMe from "./components/AboutMe.vue";
 import WhereAmI from "./components/WhereAmI.vue";
 import LanguageChange from "./components/LanguageChange.vue";
+import Hero from "./components/Hero.vue";
 
 const { md, lg, xl } = useDisplay();
 
@@ -39,39 +40,7 @@ console.log(i18n.tm("HOME.TAGS"));
   <v-app>
     <v-main class="bg-grey-darken-3">
       <v-container style="max-width: 45rem" class="pt-16">
-        <!-- Presentation -->
-        <section class="mt-16">
-          <h1 class="text-h3">
-            {{ $t("HOME.WELCOME") }}
-          </h1>
-          <h3
-            style="text-wrap: pretty"
-            class="font-weight-regular text-grey-lighten-2 mt-2 w-75"
-          >
-            {{ $t("profile.shortDescription") }}
-          </h3>
-        </section>
-        <!-- Social buttons -->
-        <section class="d-flex flex-wrap mt-3 mb-8">
-          <v-btn
-            class="expandable text-none"
-            prepend-icon="mdi-linkedin"
-            href="https://www.linkedin.com/in/baaltrodrigo/"
-            target="_blank"
-            append-icon="mdi-open-in-new"
-          >
-            LinkedIn
-          </v-btn>
-          <v-btn
-            class="expandable text-none mx-4"
-            prepend-icon="mdi-github"
-            href="https://github.com/BaaltRodrigo"
-            target="_blank"
-            append-icon="mdi-open-in-new"
-          >
-            GitHub
-          </v-btn>
-        </section>
+        <Hero />
         <!-- Working experience -->
         <section class="my-16">
           <span class="d-flex flex-wrap align-center mt-10 text-grey-lighten-2">
