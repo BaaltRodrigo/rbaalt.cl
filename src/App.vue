@@ -27,7 +27,7 @@ const isXSmallDisplay = computed(() => {
                     <h1 class="text-h5">Rodrigo Pizarro Regueiro</h1>
                   </v-card-title>
                   <v-card-subtitle class="text-body-1 font-weight-bold">
-                    Fullstack developer
+                    Software Engineer
                   </v-card-subtitle>
                   <div class="mt-2">
                     <v-btn
@@ -55,15 +55,16 @@ const isXSmallDisplay = computed(() => {
             <v-col cols="12" md="4" class="d-flex">
               <v-row :dense="isXSmallDisplay">
                 <v-col cols="12">
-                  <v-card class="pa-4" height="100%">
+                  <v-card class="pt-4 px-4 pb-md-0 pb-4" height="100%">
                     <v-card-item>
                       <v-card-title>
-                        <h2 class="text-h5">About</h2>
+                        <h2 class="text-h5">About Me</h2>
                       </v-card-title>
                     </v-card-item>
-                    <v-card-text>
-                      Full stack developer focused on deliver user friendly
-                      solutions.
+                    <v-card-text class="text-pretty">
+                      Judoka and Software Engineer focused on deliver user
+                      friendly solutions while maintaining a high quality
+                      standard.
                     </v-card-text>
                   </v-card>
                 </v-col>
@@ -81,11 +82,8 @@ const isXSmallDisplay = computed(() => {
                   </v-sheet>
                 </v-col>
                 <v-col cols="6">
-                  <v-card
-                    title="About"
-                    height="100%"
-                    text="Full stack developer focused on deliver user friendly solutions."
-                  >
+                  <v-card height="100%">
+                    <v-card-text class="text-center">No idea</v-card-text>
                   </v-card>
                 </v-col>
               </v-row>
@@ -93,10 +91,10 @@ const isXSmallDisplay = computed(() => {
           </v-row>
         </section>
         <!-- Last Working experiences -->
-        <section class="py-8">
+        <section class="py-4">
           <div class="text-center">
             <h2 class="text-h4">Working experiences</h2>
-            <p class="text-body-2 mt-1 mb-5">Companies I have working with</p>
+            <p class="text-body-1 mt-1 mb-5">Companies I have worked with</p>
           </div>
           <!-- Cards of experiences -->
           <v-row justify="center">
@@ -141,16 +139,14 @@ const isXSmallDisplay = computed(() => {
             </v-col>
           </v-row>
         </section>
+        <!-- Some of the last projects -->
         <section class="py-8 text-center">
           <h2 class="text-h4">My last projects</h2>
           <p class="text-body-2 my-3">
             A showcase for some of the projects I made or help to develop
           </p>
         </section>
-        <section class="py-8 text-center">
-          <h2 class="text-h4">More about me</h2>
-          <p class="text-body-2 my-3">Want to know more about me? 😉</p>
-        </section>
+        <!-- Footer. Remember to include a thanks to Midu and https://erickvpomie.vercel.app/ -->
         <footer>
           <section class="pt-8 text-center">
             <v-sheet class="rounded-xl" color="white" width="100%">
@@ -158,31 +154,6 @@ const isXSmallDisplay = computed(() => {
             </v-sheet>
           </section>
         </footer>
-        <!-- Second section, tech stack and more information about me -->
-        <!-- <v-row dense>
-          <v-col cols="8" md="3" class="expandable-reverse">
-            <tech-icons-card />
-          </v-col>
-          <v-col
-            cols="12"
-            md="6"
-            :order="isLargeDisplay ? '' : 'first'"
-            class="expandable-reverse"
-          >
-            <git-hub height="280" />
-          </v-col>
-          <v-col cols="4" md="3" style="height: 100%">
-            <v-row dense>
-              <v-col cols="12" class="expandable-reverse">
-                <your-age :height="isLargeDisplay ? '136' : '140'" />
-              </v-col>
-              <v-col cols="12" class="expandable-reverse">
-                <english-level :height="isLargeDisplay ? '136' : '140'" />
-              </v-col>
-            </v-row>
-          </v-col>
-        </v-row> -->
-        <!-- Third section. About me, the map and work in progress... -->
       </v-container>
     </v-main>
   </v-app>
