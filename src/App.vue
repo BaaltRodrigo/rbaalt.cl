@@ -1,18 +1,15 @@
 <script setup>
 import { useDisplay } from "vuetify/lib/framework.mjs";
-import { computed, ref } from "vue";
-import TechIconsCard from "./components/TechIconsCard.vue";
-import YourAge from "./components/YourAge.vue";
-import GitHub from "./components/GitHub.vue";
-import EnglishLevel from "./components/EnglishLevel.vue";
-import AboutMe from "./components/AboutMe.vue";
-import WhereAmI from "./components/WhereAmI.vue";
-import LanguageChange from "./components/LanguageChange.vue";
+import { computed } from "vue";
 
-const { md, lg, xl } = useDisplay();
+const { md, lg, xl, xs } = useDisplay();
 
 const isLargeDisplay = computed(() => {
   return md.value || lg.value || xl.value;
+});
+
+const isXSmallDisplay = computed(() => {
+  return xs.value;
 });
 </script>
 
@@ -22,7 +19,7 @@ const isLargeDisplay = computed(() => {
       <v-container class="pt-8" style="max-width: 75rem">
         <!--Top Section with big box and 2 on the next column-->
         <section class="py-12">
-          <v-row :dense="!isLargeDisplay">
+          <v-row :dense="isXSmallDisplay">
             <v-col cols="12" md="8">
               <v-card class="pa-4 d-flex align-end" height="40vh">
                 <v-card-item>
@@ -56,7 +53,7 @@ const isLargeDisplay = computed(() => {
             </v-col>
             <!-- Short about and another info -->
             <v-col cols="12" md="4" class="d-flex">
-              <v-row :dense="!isLargeDisplay">
+              <v-row :dense="isXSmallDisplay">
                 <v-col cols="12">
                   <v-card class="pa-4" height="100%">
                     <v-card-item>
@@ -95,9 +92,54 @@ const isLargeDisplay = computed(() => {
             </v-col>
           </v-row>
         </section>
-        <section class="py-8 text-center">
-          <h2 class="text-h4">Working experiences</h2>
-          <p class="text-body-2 my-3">Companies I have working with</p>
+        <!-- Last Working experiences -->
+        <section class="py-8">
+          <div class="text-center">
+            <h2 class="text-h4">Working experiences</h2>
+            <p class="text-body-2 mt-1 mb-5">Companies I have working with</p>
+          </div>
+          <!-- Cards of experiences -->
+          <v-row justify="center">
+            <v-col cols="12" sm="6" md="4">
+              <v-sheet
+                class="rounded-xl py-md-4 py-8 px-md-0 px-6 text-md-center"
+                color="white"
+                :height="isLargeDisplay ? '50vh' : ''"
+              >
+                <h3 class="text-h5">Facilita SPA</h3>
+                <h4 class="text-subtitle-2 font-weight-bold">
+                  Software Engineer
+                </h4>
+                <span class="text-body-2">Mar. 2019 - Ene. 2024</span>
+              </v-sheet>
+            </v-col>
+            <v-col cols="12" sm="6" md="4">
+              <v-sheet
+                class="rounded-xl py-md-4 py-8 px-md-0 px-6 text-md-center"
+                color="white"
+                :height="isLargeDisplay ? '50vh' : ''"
+              >
+                <h3 class="text-h5">CronApp</h3>
+                <h4 class="text-subtitle-2 font-weight-bold">
+                  Tech Lead / Full Stack Developer
+                </h4>
+                <span class="text-body-2">May. 2022 - Ago. 2023</span>
+              </v-sheet>
+            </v-col>
+            <v-col cols="12" sm="6" md="4">
+              <v-sheet
+                class="rounded-xl py-md-4 py-8 px-md-0 px-6 text-md-center"
+                color="white"
+                :height="isLargeDisplay ? '50vh' : ''"
+              >
+                <h3 class="text-h5">Ejercito de Chile</h3>
+                <h4 class="text-subtitle-2 font-weight-bold">
+                  Full Stack Developer
+                </h4>
+                <span class="text-body-2">Sept 2019 - Mar. 2020</span>
+              </v-sheet>
+            </v-col>
+          </v-row>
         </section>
         <section class="py-8 text-center">
           <h2 class="text-h4">My last projects</h2>
@@ -105,6 +147,17 @@ const isLargeDisplay = computed(() => {
             A showcase for some of the projects I made or help to develop
           </p>
         </section>
+        <section class="py-8 text-center">
+          <h2 class="text-h4">More about me</h2>
+          <p class="text-body-2 my-3">Want to know more about me? 😉</p>
+        </section>
+        <footer>
+          <section class="pt-8 text-center">
+            <v-sheet class="rounded-xl" color="white" width="100%">
+              <h2 class="text-h4">The footer</h2>
+            </v-sheet>
+          </section>
+        </footer>
         <!-- Second section, tech stack and more information about me -->
         <!-- <v-row dense>
           <v-col cols="8" md="3" class="expandable-reverse">
