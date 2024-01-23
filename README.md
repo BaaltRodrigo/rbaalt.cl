@@ -1,7 +1,6 @@
-# Vue 3 + Vite
+# rbaalt.cl
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Hi! Im Rodrigo. People know me by a variety of names. They often use Rodrigo, or Baalt.  
+This Repo is where I keep the code for my web.
 
-## Recommended IDE Setup
-
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+I use the portfolio of [Erick Pomié](https://erickvpomie.vercel.app/) with a few modifications. <sub>Nice portfolio btw</sub>
