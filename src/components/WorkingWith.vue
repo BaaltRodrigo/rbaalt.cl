@@ -11,7 +11,13 @@
         <span class="text-body-2">{{ dates }}</span>
       </v-col>
       <v-col cols="3" md="5" align-self="center">
-        <v-img :src="image" width="100%" cover class="mt-md-12"></v-img>
+        <v-img
+          :src="image"
+          width="100%"
+          cover
+          class="mt-md-12"
+          alt="Logo of a company I have worked with"
+        ></v-img>
       </v-col>
     </v-row>
   </v-sheet>
