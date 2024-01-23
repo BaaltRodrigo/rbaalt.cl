@@ -82,7 +82,7 @@ const LINKS = {
                     color="grey-darken-3 text-grey-lighten-1"
                     class="pa-3 rounded-xl d-flex flex-column justify-center align-center"
                   >
-                    <p class="text-h2 text-center">+5</p>
+                    <p class="text-h2 text-center text-amber-lighten-3">+5</p>
                     <h3
                       class="text-subtitle-2 font-weight-medium text-center text-pretty"
                     >
@@ -194,8 +194,7 @@ const LINKS = {
                   </a>
                 </p>
               </div>
-              <div class="text-right">
-                <p>Socials</p>
+              <div class="text-right align-self-center">
                 <div class="d-flex">
                   <v-btn
                     :href="LINKS.linkedin"
