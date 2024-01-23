@@ -4,6 +4,7 @@ import WorkingWith from "./components/WorkingWith.vue";
 const LINKS = {
   linkedin: "https://www.linkedin.com/in/baaltrodrigo/",
   github: "https://github.com/baaltrodrigo",
+  originalLayout: "https://erickvpomie.vercel.app/",
 };
 </script>
 
@@ -93,11 +94,12 @@ const LINKS = {
                   <v-card
                     max-height="240"
                     height="100%"
-                    color="grey-darken-3 text-grey-lighten-4 d-flex justify-center"
+                    class="d-flex justify-center"
+                    color="grey-darken-3 text-grey-lighten-4"
                   >
                     <!-- div to add opacity to the end of the component with a gradient -->
                     <v-img
-                      src="/santiago-dark.png"
+                      src="/santiago-dark.webp"
                       cover
                       alt="Map image of Santiago, Chile"
                     ></v-img>
@@ -129,7 +131,7 @@ const LINKS = {
                 company="Facilita SPA"
                 position="Software Engineer"
                 dates="Mar. 2019 - Ene. 2024"
-                image="/facilita-logo-dark.png"
+                image="/facilita-logo-dark.webp"
               />
             </v-col>
             <v-col cols="12" sm="8" md="4">
@@ -137,7 +139,7 @@ const LINKS = {
                 company="CronApp"
                 position="Tech Lead / Full Stack Developer"
                 dates="May. 2022 - Ago. 2023"
-                image="/cronapp-logo.png"
+                image="/cronapp-logo.webp"
               />
             </v-col>
             <v-col cols="12" sm="8" md="4">
@@ -145,7 +147,7 @@ const LINKS = {
                 company="Ejercito de Chile"
                 position="Full Stack Developer"
                 dates="Sept 2019 - Mar. 2020"
-                image="/chilean-army-logo.png"
+                image="/chilean-army-logo.webp"
               />
             </v-col>
           </v-row>
@@ -159,9 +161,58 @@ const LINKS = {
         </section>
         <!-- Footer. Remember to include a thanks to Midu and https://erickvpomie.vercel.app/ -->
         <footer>
-          <section class="pt-8 text-center">
-            <v-sheet class="rounded-xl" color="white" width="100%">
-              <h2 class="text-h4">The footer</h2>
+          <section class="pt-8">
+            <v-sheet
+              class="rounded-xl text-grey-lighten-1 pa-6 d-flex justify-space-between"
+              color="grey-darken-3"
+              width="100%"
+            >
+              <div>
+                <p>© 2024 Rodrigo Pizarro.</p>
+                <p>
+                  Based on the layout of
+                  <a
+                    :href="LINKS.originalLayout"
+                    target="_blank"
+                    class="text-grey-lighten-1"
+                  >
+                    Erick Pomié
+                  </a>
+                </p>
+                <p>
+                  Special thanks to
+                  <a
+                    href="https://midu.dev/"
+                    class="text-grey-lighten-1"
+                    target="_blank"
+                  >
+                    Midudev
+                    <v-tooltip activator="parent" color="white">
+                      Mi men, tus podcast y videos de 1 hora me salvan las
+                      tardes programando
+                    </v-tooltip>
+                  </a>
+                </p>
+              </div>
+              <div class="text-right">
+                <p>Socials</p>
+                <div class="d-flex">
+                  <v-btn
+                    :href="LINKS.linkedin"
+                    target="blank"
+                    icon="mdi-linkedin"
+                    variant="plain"
+                    density="compact"
+                  />
+                  <v-btn
+                    variant="plain"
+                    icon="mdi-github"
+                    :href="LINKS.github"
+                    target="blank"
+                    density="compact"
+                  />
+                </div>
+              </div>
             </v-sheet>
           </section>
         </footer>
