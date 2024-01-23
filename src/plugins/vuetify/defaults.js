@@ -1,6 +1,6 @@
 export const customDefaults = {
   VBtn: {
-    class: "rounded-xl",
+    class: "rounded-lg",
     variant: "flat",
   },
 
