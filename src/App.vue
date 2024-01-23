@@ -72,7 +72,8 @@ const LINKS = {
                     </v-card-item>
                     <v-card-text class="text-pretty">
                       Judoka and Software Engineer focused on deliver user
-                      friendly solutions
+                      friendly solutions. I have been working with web
+                      technologies for more than 5 years.
                     </v-card-text>
                   </v-card>
                 </v-col>
@@ -153,12 +154,12 @@ const LINKS = {
           </v-row>
         </section>
         <!-- Some of the last projects -->
-        <section class="py-8 text-center">
+        <!-- <section class="py-8 text-center">
           <h2 class="text-h4">My last projects</h2>
           <p class="text-body-2 my-3">
             A showcase for some of the projects I made or help to develop
           </p>
-        </section>
+        </section> -->
         <!-- Footer. Remember to include a thanks to Midu and https://erickvpomie.vercel.app/ -->
         <footer>
           <section class="pt-8">
