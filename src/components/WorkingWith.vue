@@ -10,8 +10,8 @@
         <h4 class="text-subtitle-2 font-weight-bold">{{ position }}</h4>
         <span class="text-body-2">{{ dates }}</span>
       </v-col>
-      <v-col cols="3" md="7">
-        <v-img :src="image"></v-img>
+      <v-col cols="3" md="5" align-self="center">
+        <v-img :src="image" width="100%" cover class="mt-md-12"></v-img>
       </v-col>
     </v-row>
   </v-sheet>
