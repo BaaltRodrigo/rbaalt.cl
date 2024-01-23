@@ -1,17 +1,10 @@
 <script setup>
-import { useDisplay } from "vuetify/lib/framework.mjs";
-import { computed } from "vue";
 import WorkingWith from "./components/WorkingWith.vue";
 
-const { md, lg, xl, xs } = useDisplay();
-
-const isLargeDisplay = computed(() => {
-  return md.value || lg.value || xl.value;
-});
-
-const isXSmallDisplay = computed(() => {
-  return xs.value;
-});
+const LINKS = {
+  linkedin: "https://www.linkedin.com/in/baaltrodrigo/",
+  github: "https://github.com/baaltrodrigo",
+};
 </script>
 
 <template>
@@ -20,7 +13,7 @@ const isXSmallDisplay = computed(() => {
       <v-container class="pt-8" style="max-width: 75rem">
         <!--Top Section with big box and 2 on the next column-->
         <section class="py-12">
-          <v-row :dense="isXSmallDisplay">
+          <v-row>
             <v-col cols="12" md="8">
               <v-card
                 class="pa-4 d-flex align-end"
@@ -42,6 +35,8 @@ const isXSmallDisplay = computed(() => {
                       class="text-none"
                       prepend-icon="mdi-linkedin"
                       color="blue"
+                      :href="LINKS.linkedin"
+                      target="blank"
                     >
                       LinkedIn
                     </v-btn>
@@ -50,6 +45,8 @@ const isXSmallDisplay = computed(() => {
                       class="text-none ml-2"
                       prepend-icon="mdi-github"
                       color="black"
+                      :href="LINKS.github"
+                      target="blank"
                     >
                       Github
                     </v-btn>
@@ -60,7 +57,7 @@ const isXSmallDisplay = computed(() => {
             </v-col>
             <!-- Short about and another info -->
             <v-col cols="12" md="4" class="d-flex">
-              <v-row :dense="isXSmallDisplay">
+              <v-row>
                 <v-col cols="12">
                   <v-card
                     class="pt-4 px-4 pb-md-0 pb-4"
@@ -94,25 +91,23 @@ const isXSmallDisplay = computed(() => {
                 </v-col>
                 <v-col cols="6">
                   <v-card
+                    max-height="240"
                     height="100%"
-                    class="obscure-to-bottom"
-                    color="grey-darken-3 text-grey-lighten-4"
+                    color="grey-darken-3 text-grey-lighten-4 d-flex justify-center"
                   >
                     <!-- div to add opacity to the end of the component with a gradient -->
                     <v-img
                       src="/santiago-dark.png"
                       cover
-                      width="100%"
-                      style="position: absolute"
+                      alt="Map image of Santiago, Chile"
                     ></v-img>
                     <div class="obscure-to-bottom"></div>
-                    <v-card-item class="align-self-end">
-                      <v-card-subtitle>
-                        <h3 class="text-center text-body-2">
-                          From Santiago, CL
-                        </h3>
-                      </v-card-subtitle>
-                    </v-card-item>
+                    <h3
+                      class="text-center text-subtitle-2 text-grey-lighten-1 align-self-end my-2"
+                      style="position: absolute"
+                    >
+                      From Santiago, CL
+                    </h3>
                   </v-card>
                 </v-col>
               </v-row>
@@ -129,7 +124,7 @@ const isXSmallDisplay = computed(() => {
           </div>
           <!-- Cards of experiences -->
           <v-row justify="center">
-            <v-col cols="12" sm="6" md="4">
+            <v-col cols="12" sm="8" md="4">
               <WorkingWith
                 company="Facilita SPA"
                 position="Software Engineer"
@@ -137,7 +132,7 @@ const isXSmallDisplay = computed(() => {
                 image="/facilita-logo-dark.png"
               />
             </v-col>
-            <v-col cols="12" sm="6" md="4">
+            <v-col cols="12" sm="8" md="4">
               <WorkingWith
                 company="CronApp"
                 position="Tech Lead / Full Stack Developer"
@@ -145,7 +140,7 @@ const isXSmallDisplay = computed(() => {
                 image="/cronapp-logo.png"
               />
             </v-col>
-            <v-col cols="12" sm="6" md="4">
+            <v-col cols="12" sm="8" md="4">
               <WorkingWith
                 company="Ejercito de Chile"
                 position="Full Stack Developer"
@@ -185,7 +180,7 @@ const isXSmallDisplay = computed(() => {
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.5) 100%
+    rgba(0, 0, 0, 0.8) 100%
   );
 }
 
