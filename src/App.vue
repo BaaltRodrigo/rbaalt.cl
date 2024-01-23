@@ -16,43 +16,59 @@ const LINKS = {
         <section class="py-12">
           <v-row>
             <v-col cols="12" md="8">
-              <v-card
-                class="pa-4 d-flex align-end"
-                height="40vh"
-                color="grey-darken-3 text-grey-lighten-2"
-              >
-                <v-card-item>
-                  <v-card-title>
-                    <h1 class="text-h5">Rodrigo Pizarro Regueiro</h1>
-                  </v-card-title>
-                  <span
-                    class="text-body-1 text-amber-lighten-3 font-weight-bold"
-                  >
-                    Software Engineer
-                  </span>
-                  <div class="mt-2">
-                    <v-btn
-                      variant="flat"
-                      class="text-none"
-                      prepend-icon="mdi-linkedin"
-                      color="blue"
-                      :href="LINKS.linkedin"
-                      target="blank"
+              <v-card height="40vh" color="grey-darken-3 text-grey-lighten-2">
+                <v-overlay
+                  :model-value="true"
+                  contained
+                  no-click-animation
+                  persistent
+                  class="align-end"
+                  :scrim="false"
+                >
+                  <v-card-item class="align-self-end ml-4 mb-4">
+                    <v-card-title>
+                      <h1 class="text-h5 font-weight-bold">
+                        Rodrigo Pizarro Regueiro
+                      </h1>
+                    </v-card-title>
+                    <span
+                      class="text-body-1 text-amber-lighten-3 font-weight-bold"
                     >
-                      LinkedIn
-                    </v-btn>
-                    <v-btn
-                      variant="flat"
-                      class="text-none ml-2"
-                      prepend-icon="mdi-github"
-                      color="black"
-                      :href="LINKS.github"
-                      target="blank"
-                    >
-                      Github
-                    </v-btn>
-                  </div>
-                </v-card-item>
+                      Software Engineer
+                    </span>
+                    <div class="mt-2">
+                      <v-btn
+                        variant="flat"
+                        class="text-none"
+                        prepend-icon="mdi-linkedin"
+                        color="blue"
+                        :href="LINKS.linkedin"
+                        target="blank"
+                      >
+                        LinkedIn
+                      </v-btn>
+                      <v-btn
+                        variant="flat"
+                        class="text-none ml-2"
+                        prepend-icon="mdi-github"
+                        color="grey-lighten-2"
+                        :href="LINKS.github"
+                        target="blank"
+                      >
+                        GitHub
+                      </v-btn>
+                    </div>
+                  </v-card-item>
+                </v-overlay>
+                <v-img
+                  width="50%"
+                  min-width="300"
+                  height="100%"
+                  cover
+                  class="rounded-ts-circle float-right"
+                  src="/myself.jpg"
+                ></v-img>
+                <div class="obscure-to-bottom"></div>
               </v-card>
               <!-- <profile-card :height="isLargeDisplay ? '280' : ''" /> -->
             </v-col>
@@ -131,7 +147,7 @@ const LINKS = {
               <WorkingWith
                 company="Facilita SPA"
                 position="Software Engineer"
-                dates="Mar. 2019 - Ene. 2024"
+                dates="March 2019 - January 2024"
                 image="/facilita-logo-dark.webp"
               />
             </v-col>
@@ -139,15 +155,15 @@ const LINKS = {
               <WorkingWith
                 company="CronApp"
                 position="Tech Lead / Full Stack Developer"
-                dates="May. 2022 - Ago. 2023"
+                dates="May 2022 - August 2023"
                 image="/cronapp-logo.webp"
               />
             </v-col>
             <v-col cols="12" sm="8" md="4">
               <WorkingWith
-                company="Ejercito de Chile"
+                company="Chilean Army"
                 position="Full Stack Developer"
-                dates="Sept 2019 - Mar. 2020"
+                dates="September 2019 - March 2020"
                 image="/chilean-army-logo.webp"
               />
             </v-col>
@@ -160,9 +176,9 @@ const LINKS = {
             A showcase for some of the projects I made or help to develop
           </p>
         </section> -->
-        <!-- Footer. Remember to include a thanks to Midu and https://erickvpomie.vercel.app/ -->
+        <!-- Footer-->
         <footer>
-          <section class="pt-8">
+          <section class="pt-1">
             <v-sheet
               class="rounded-xl text-grey-lighten-1 pa-6 d-flex justify-space-between"
               color="grey-darken-3"
@@ -189,8 +205,7 @@ const LINKS = {
                   >
                     Midudev
                     <v-tooltip activator="parent" color="white">
-                      Mi men, tus podcast y videos de 1 hora me salvan las
-                      tardes programando
+                      Mi men, your podcasts and videos are awesome!
                     </v-tooltip>
                   </a>
                 </p>
@@ -231,7 +246,7 @@ const LINKS = {
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.8) 100%
+    rgba(0, 0, 0, 0.6) 100%
   );
 }
 
