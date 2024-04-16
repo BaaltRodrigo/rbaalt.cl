@@ -1,6 +1,8 @@
 // Styles
 import "@mdi/font/css/materialdesignicons.css";
-import "vuetify/styles";
+import "@fontsource/exo-2";
+// import "vuetify/styles";
+import "../styles/main.scss";
 
 // Vuetify
 import { createVuetify } from "vuetify";
