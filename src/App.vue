@@ -59,7 +59,7 @@ const LINKS = {
                     color="purple-darken-3 "
                   >
                     <v-img
-                      src="./src/assets/chile-flag.png"
+                      src="/chile-flag.png"
                       class="text-center"
                       width="100%"
                       max-width="300"
