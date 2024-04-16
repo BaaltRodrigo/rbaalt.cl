@@ -10,7 +10,7 @@ const LINKS = {
 
 <template>
   <v-app>
-    <v-main class="bg-grey-darken-4">
+    <v-main class="background-constellation">
       <v-container class="pt-8" style="max-width: 75rem">
         <!--Top Section with big box and 2 on the next column-->
         <section class="py-12">
@@ -249,6 +249,13 @@ const LINKS = {
     rgba(0, 0, 0, 0.6) 100%
   );
 }
+
+.background-constellation {
+  background-image: url("./assets/endless-constellation.svg");
+  background-repeat: repeat;
+  background-color: #330033;
+}
+
 
 .text-pretty {
   text-wrap: pretty;
