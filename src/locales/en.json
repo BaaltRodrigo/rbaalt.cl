@@ -1,28 +1,184 @@
 {
-  "profile": {
-    "welcome": "Hi! I'm Rodrigo",
-    "shortDescription": " +5 years as a full stack developer using Laravel + Vue.js to deliver user friendly solutions.",
-    "workingAt": "Currently working at Facilita"
+  "basics": {
+    "name": "Rodrigo Pizarro Regueiro",
+    "label": "Software Engineer",
+    "image": "/myself.jpg",
+    "email": "r.antonio.regueiro@gmail.com",
+    "phone": null,
+    "url": null,
+    "summary": "Judoka and Software Engineer @Lifebox with 5 years of experience developing user friendly solutions.",
+    "location": {
+      "address": null,
+      "postalCode": null,
+      "city": "Santiago",
+      "countryCode": "CL",
+      "region": "Santiago"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "baaltrodrigo",
+        "url": "https://www.linkedin.com/in/baaltrodrigo/"
+      },
+      {
+        "network": "GitHub",
+        "username": "BaaltRodrigo",
+        "url": "https://www.github.com/in/baaltrodrigo/"
+      }
+    ]
   },
-  "age": {
-    "title": "My age"
-  },
-  "english": {
-    "title": "English level"
-  },
-  "techIcons": {
-    "title": "What do I use?"
-  },
-  "github": {
-    "title": "Check on GitHub!"
-  },
-  "about": {
-    "title": "More about me",
-    "description": "My name is Rodrigo, I'm a developer from Chile. I discover programming at the university and that unfold a world of infinite possibilities.",
-    "interests": "I'm a Judoka, I practice this sport since 2015 and also love to read fantasy books. Big fan of The Stormlight Archive. And sometimes I built model kits of Gundams."
-  },
-  "language": {
-    "title": "Language",
-    "hint": "Click to switch"
-  }
+  "work": [
+    {
+      "name": "Lifebox Chile",
+      "position": "Software Engineer",
+      "url": "https://lifebox.cl",
+      "startDate": "2024-03-01",
+      "endDate": "",
+      "summary": "Software engineer for the client and student facing applications.",
+      "highlights": ["Mobile development with Nuxt3 and Vuetify"]
+    },
+    {
+      "name": "Facilita SPA",
+      "position": "Software Engineer",
+      "url": "https://facilita.cl",
+      "startDate": "2019-03-01",
+      "endDate": "2023-12-01",
+      "summary": "Software Engineer for several products. In charge of the digital transformation of the company.",
+      "highlights": [
+        "Update the old infrastructure to a cloud based infrastructure",
+        "Redesign the model structure of the data",
+        "Implementation of a new CI/CD pipeline"
+      ]
+    },
+    {
+      "name": "CronApp CL",
+      "position": "Tech lead / Software Engineer",
+      "url": "https://cronapp.cl",
+      "startDate": "2022-05-01",
+      "endDate": "2023-09-01",
+      "summary": "In charge of the development of the first MVP for the applied research. The deployment architecture of the application and to guide the team to achieve a successful product delivery.",
+      "highlights": [
+        "Make the first MVP",
+        "Prepare the data model to be used in the application",
+        "Creation of pipelines for CI/CD"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "",
+      "position": "",
+      "url": "",
+      "startDate": "",
+      "endDate": "",
+      "summary": "",
+      "highlights": [""]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Duoc UC",
+      "url": "https://duocuc.cl/",
+      "area": "Software Engineer",
+      "studyType": "Bachelor",
+      "startDate": "2020-03-01",
+      "endDate": "2023-12-01",
+      "score": null,
+      "courses": [""]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }
+  ],
+  "publications": [
+    {
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Frontend Development",
+      "level": "Semi Senior",
+      "keywords": ["VueJS", "Vuetify", "JavaScript", "Angular"]
+    },
+    {
+      "name": "Backend development",
+      "level": "Senior",
+      "keywords": ["PHP - Laravel", "Python", "Node.js", "Express"]
+    },
+    {
+      "name": "Cloud Architecture",
+      "level": "Junior",
+      "keywords": ["AWS", "Azure", "Google Cloud Platform"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Judo",
+      "keywords": ["Judo", "Martial arts"]
+    },
+    {
+      "name": "Books",
+      "keywords": [
+        "Brandon Sanderson",
+        "Mistborn",
+        "The Stormlight Archive",
+        "Cosmere",
+        "There is always another secret"
+      ]
+    },
+    {
+      "name": "Music",
+      "keywords": [
+        "Guitar",
+        "Saxophone",
+        "Heavy Metal",
+        "Rock",
+        "Spanish Metal"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Duocmatico",
+      "startDate": "2023-08-01",
+      "endDate": "",
+      "description": "A side-project to help students at Duoc UC to find the best courses for their careers.",
+      "highlights": [""],
+      "url": "https://duocmatico.cl/"
+    }
+  ]
 }
