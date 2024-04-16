@@ -1,31 +1,23 @@
 <template>
-  <v-sheet
-    class="rounded-xl pt-md-4 pb-md-8 py-8 px-md-0 px-6 text-md-center h-100"
-    color="grey-darken-3 text-grey-lighten-2"
+  <v-card
+    class="rounded-xl py-4 h-100 noise-background"
+    color="purple-darken-3 text-grey-lighten-2"
   >
-    <!-- Background image -->
-    <v-row justify-sm="space-between" justify-md="center">
-      <v-col cols="8" md="12">
-        <h3 class="text-h5 text-amber-lighten-3">{{ company }}</h3>
-        <h4 class="text-subtitle-2 font-weight-bold">{{ position }}</h4>
-        <span class="text-body-2">{{ dates }}</span>
-      </v-col>
-      <v-col cols="3" md="5" align-self="center">
-        <v-img
-          :src="image"
-          width="100%"
-          cover
-          class="mt-md-12"
-          alt="Logo of a company I have worked with"
-        ></v-img>
-      </v-col>
-    </v-row>
-  </v-sheet>
+    <!-- Logo of the company -->
+    <template #prepend>
+      <v-avatar rounded="0" size="75">
+        <v-img :src="image" alt="Logo of a company I have worked with"></v-img>
+      </v-avatar>
+    </template>
+    <template #title>
+      <h4 class="text-body-1 font-weight-medium">{{ position }}</h4>
+      <h3 class="text-h5 text-amber-lighten-3">{{ company }}</h3>
+      <p class="text-body-2">{{ dates }}</p>
+    </template>
+  </v-card>
 </template>
 
 <script setup>
-import { defineProps } from "vue";
-
 const props = defineProps({
   company: {
     type: String,
