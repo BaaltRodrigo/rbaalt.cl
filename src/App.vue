@@ -147,6 +147,11 @@ const LINKS = {
                     Midudev
                   </a>
                 </p>
+                <a
+                  class="text-grey-lighten-3 text-body-2"
+                  href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/"
+                  >Free SVG Backgrounds and Patterns by SVGBackgrounds.com</a
+                >
               </div>
               <div class="text-right align-self-center">
                 <div class="d-flex">
@@ -188,6 +193,7 @@ const LINKS = {
   );
 }
 
+/*  */
 .background-constellation {
   background-image: url("./assets/endless-constellation.svg");
   background-repeat: repeat;
