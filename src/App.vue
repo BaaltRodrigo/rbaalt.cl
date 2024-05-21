@@ -14,7 +14,7 @@ const LINKS = {
     <v-main class="background-constellation">
       <v-container class="pt-8" style="max-width: 75rem">
         <!--Top Section with big box and 2 on the next column-->
-        <section class="py-12">
+        <section class="py-3">
           <v-row>
             <v-col cols="12" md="8">
               <profile-card />
