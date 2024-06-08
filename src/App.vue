@@ -22,7 +22,7 @@ const LINKS = {
             <!-- Short about and another info -->
             <v-col cols="12" md="4" class="d-flex">
               <v-row>
-                <v-col cols="4" md="12">
+                <v-col cols="12" sm="4" md="12">
                   <v-card
                     height="100%"
                     class="pt-4 px-4 pb-md-0 pb-4 noise-background rounded-4"
@@ -40,7 +40,7 @@ const LINKS = {
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="4" md="6">
+                <v-col cols="8" sm="4" md="6">
                   <v-sheet
                     height="100%"
                     color="#feefc3"
