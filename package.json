@@ -14,12 +14,13 @@
     "firebase": "^10.5.0",
     "sass": "^1.70.0",
     "sass-loader": "^14.1.0",
+    "vite-plugin-vuetify": "^2.0.3",
     "vue": "^3.3.4",
     "vue-i18n": "^9.6.1",
     "vuetify": "^3.3.22"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
-    "vite": "^4.4.5"
+    "vite": "^5.2.11"
   }
 }

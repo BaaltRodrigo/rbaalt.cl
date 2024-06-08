@@ -1,9 +1,9 @@
 <template>
   <v-card
-    min-height="40vh"
-    height="100%"
-    class="noise-background"
+    height="380"
+    class="noise-background rounded-5"
     color="purple-darken-3 text-white"
+    variant="outlined"
   >
     <v-overlay
       :model-value="true"
@@ -15,7 +15,9 @@
     >
       <v-card-item class="ml-4 mb-4">
         <v-card-title>
-          <h1 class="text-h4 font-weight-bold">{{ $t("basics.name") }}</h1>
+          <h1 class="text-h4 text-white font-weight-bold">
+            {{ $t("basics.name") }}
+          </h1>
         </v-card-title>
         <p class="text-body-1 text-amber-lighten-3 mt-1">
           Software Engineer
@@ -28,12 +30,12 @@
             @Lifebox
           </a>
         </p>
-        <div class="mt-4">
+        <section class="mt-4">
           <v-btn
             v-for="social in $tm('basics.profiles')"
             :key="social.network"
             variant="flat"
-            class="text-none mr-2"
+            class="text-none rounded-2 mr-2"
             :prepend-icon="socialIcons[social.network.toLowerCase()]"
             :color="socialColors[social.network.toLowerCase()]"
             :href="social.url"
@@ -41,7 +43,7 @@
           >
             {{ social.network }}
           </v-btn>
-        </div>
+        </section>
       </v-card-item>
     </v-overlay>
     <v-img
