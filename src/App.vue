@@ -22,10 +22,10 @@ const LINKS = {
             <!-- Short about and another info -->
             <v-col cols="12" md="4" class="d-flex">
               <v-row>
-                <v-col cols="12">
+                <v-col cols="4" md="12">
                   <v-card
-                    class="pt-4 px-4 pb-md-0 pb-4 noise-background"
                     height="100%"
+                    class="pt-4 px-4 pb-md-0 pb-4 noise-background rounded-4"
                     color="purple-darken-3 text-grey-lighten-3"
                   >
                     <v-card-item>
@@ -33,18 +33,18 @@ const LINKS = {
                         <h2 class="text-h5">About Me</h2>
                       </v-card-title>
                     </v-card-item>
-                    <v-card-text class="text-pretty text-body-1">
+                    <v-card-text class="text-pretty text-body-2">
                       Judoka and Software Engineer focused on deliver user
                       friendly solutions. I have been working with web
                       technologies for more than 5 years.
                     </v-card-text>
                   </v-card>
                 </v-col>
-                <v-col cols="6">
+                <v-col cols="4" md="6">
                   <v-sheet
                     height="100%"
                     color="#feefc3"
-                    class="pa-3 rounded-xl text-grey-darken-4 d-flex flex-column justify-center align-center noise-background"
+                    class="pa-3 rounded-5 text-grey-darken-4 d-flex flex-column justify-center align-center"
                   >
                     <p class="text-h2 text-center">+5</p>
                     <h3 class="text-body-1 font-weight-regular text-center">
@@ -52,20 +52,21 @@ const LINKS = {
                     </h3>
                   </v-sheet>
                 </v-col>
-                <v-col cols="6">
+                <v-col cols="4" md="6">
                   <v-card
                     height="100%"
-                    class="noise-background pa-4 d-flex flex-column justify-center align-center"
+                    class="noise-background pa-2 rounded-5 d-flex flex-wrap"
                     color="purple-darken-3 "
                   >
                     <v-img
                       src="/chile-flag.png"
-                      class="text-center"
+                      class="rounded-3 bg-black align-self-start"
+                      aspect-ratio="9 / 16"
                       width="100%"
-                      max-width="300"
                       alt="Chilean flag"
                     ></v-img>
-                    <h3 class="text-center text-body-1">From Chile</h3>
+
+                    <h3 class="text-body-1 ma-auto">From Chile</h3>
                   </v-card>
                 </v-col>
               </v-row>
@@ -84,7 +85,6 @@ const LINKS = {
           <v-row justify="center">
             <v-col cols="12" sm="8" md="4">
               <WorkingWith
-                @click=""
                 company="Facilita SPA"
                 position="Software Engineer"
                 dates="Mar. 2019 - Jan. 2024"
@@ -93,7 +93,6 @@ const LINKS = {
             </v-col>
             <v-col cols="12" sm="8" md="4">
               <WorkingWith
-                @click=""
                 company="CronApp"
                 position="Tech Lead"
                 dates="May 2022 - Aug. 2023"
@@ -193,7 +192,6 @@ const LINKS = {
   );
 }
 
-/*  */
 .background-constellation {
   background-image: url("./assets/endless-constellation.svg");
   background-repeat: repeat;
