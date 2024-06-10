@@ -16,7 +16,7 @@
       <v-card-item class="ml-4 mb-4">
         <v-card-title>
           <h1 class="text-h4 text-white font-weight-bold">
-            {{ $t("basics.name") }}
+            Rodrigo Pizarro Regueiro
           </h1>
         </v-card-title>
         <p class="text-body-1 text-amber-lighten-3 mt-1">
@@ -32,12 +32,12 @@
         </p>
         <section class="mt-4">
           <v-btn
-            v-for="social in $tm('basics.profiles')"
+            v-for="social in profiles"
             :key="social.network"
             variant="flat"
             class="text-none rounded-2 mr-2"
-            :prepend-icon="socialIcons[social.network.toLowerCase()]"
-            :color="socialColors[social.network.toLowerCase()]"
+            :prepend-icon="social.icon"
+            :color="social.color"
             :href="social.url"
             target="blank"
           >
@@ -58,15 +58,20 @@
 </template>
 
 <script setup>
-const socialColors = {
-  linkedin: "blue-darken-3",
-  github: "grey-lighten-2",
-};
-
-const socialIcons = {
-  linkedin: "mdi-linkedin",
-  github: "mdi-github",
-};
+const profiles = [
+  {
+    network: "LinkedIn",
+    icon: "mdi-linkedin",
+    color: "blue-darken-3",
+    url: "https://www.linkedin.com/in/baaltrodrigo/",
+  },
+  {
+    network: "GitHub",
+    icon: "mdi-github",
+    color: "grey-lighten-2",
+    url: "https://github.com/baaltrodirgo",
+  },
+];
 
 const props = defineProps({
   height: {
