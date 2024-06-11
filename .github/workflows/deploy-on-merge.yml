@@ -3,7 +3,7 @@ name: Firebase continuous deployment
 on:
   push:
     branches:
-      - main
+      - no-branch
 
 jobs:
   deploy_to_web: # This job only runs when there is a prerelease
