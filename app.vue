@@ -1,12 +1,21 @@
 <script setup>
-import WorkingWith from "./components/WorkingWith.vue";
-import ProfileCard from "./components/ProfileCard.vue";
-
 const LINKS = {
   linkedin: "https://www.linkedin.com/in/baaltrodrigo/",
   github: "https://github.com/baaltrodrigo",
   originalLayout: "https://erickvpomie.vercel.app/",
 };
+
+const pageTitle = "Rodrigo Pizarro - Software Engineer";
+const pageDescription =
+  "Rodrigo Pizarro, Software Engineer focused on deliver user friendly solutions. I have been working with web technologies for more than 5 years.";
+
+useSeoMeta({
+  title: pageTitle,
+  ogTitle: pageTitle,
+  description: pageDescription,
+  ogDescription: pageDescription,
+  ogImage: "~/public/ogImage.png",
+});
 </script>
 
 <template>
@@ -177,49 +186,3 @@ const LINKS = {
     </v-main>
   </v-app>
 </template>
-
-<style lang="css">
-.obscure-to-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 50%;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.6) 100%
-  );
-}
-
-.background-constellation {
-  background-image: url("./assets/endless-constellation.svg");
-  background-repeat: repeat;
-  background-color: #330033;
-}
-
-.noise-background {
-  background-image: url("./assets/noise.png") !important;
-  background-repeat: repeat;
-}
-
-.text-pretty {
-  text-wrap: pretty;
-}
-
-.expandable-reverse {
-  transition: transform 0.3s ease-in-out;
-}
-
-.expandable-reverse:hover {
-  transform: scale(0.95);
-}
-
-.expandable {
-  transition: transform 0.3s ease-in-out;
-}
-
-.expandable:hover {
-  transform: scale(1.05);
-}
-</style>

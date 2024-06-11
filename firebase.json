@@ -1,11 +1,15 @@
 {
+  "functions": {
+    "source": ".output/server"
+  },
   "hosting": {
-    "public": "dist",
+    "cleanUrls": true,
+    "public": ".output/public",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
         "source": "**",
-        "destination": "/index.html"
+        "function": "server"
       }
     ]
   }
