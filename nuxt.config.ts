@@ -18,16 +18,6 @@ export default defineNuxtConfig({
     },
     //...
   ],
-  nitro: {
-    preset: "firebase",
-    firebase: {
-      nodeVersion: "20",
-      gen: 2,
-      httpsOptions: {
-        maxInstances: 3,
-      },
-    },
-  },
   vite: {
     vue: {
       template: {
