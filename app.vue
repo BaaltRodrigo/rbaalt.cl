@@ -14,8 +14,7 @@ useSeoMeta({
   ogTitle: pageTitle,
   description: pageDescription,
   ogDescription: pageDescription,
-  ogImage: "/ogImage.png",
-  url: "https://baaltrodrigo.dev/",
+  ogImage: "~/public/ogImage.png",
 });
 </script>
 
