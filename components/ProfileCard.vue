@@ -71,7 +71,7 @@ const profiles = [
     network: "GitHub",
     icon: "mdi-github",
     color: "grey-lighten-2",
-    url: "https://github.com/baaltrodirgo",
+    url: "https://github.com/baaltrodrigo",
   },
 ];
 
