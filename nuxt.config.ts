@@ -2,6 +2,6 @@
 // @see https://vuetifyjs.com/en/getting-started/installation/#using-nuxt-3
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ["~/styles/main.scss"],
   ssr: true,
+  modules: ["@nuxt/ui"]
 });
