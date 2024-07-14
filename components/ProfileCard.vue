@@ -1,62 +1,29 @@
 <template>
-  <v-card
-    height="380"
-    class="noise-background rounded-5"
-    color="purple-darken-3 text-white"
-    variant="outlined"
-  >
-    <client-only>
-      <v-overlay
-        :model-value="true"
-        contained
-        no-click-animation
-        persistent
-        class="align-end"
-        :scrim="false"
-      >
-        <v-card-item class="ml-4 mb-4">
-          <v-card-title>
-            <h1 class="text-h4 text-white font-weight-bold">
-              Rodrigo Pizarro Regueiro
-            </h1>
-          </v-card-title>
-          <p class="text-body-1 text-amber-lighten-3 mt-1">
-            Software Engineer
-            <a
-              class="text-decoration-none text-color-amber-lighten-3"
-              href="https://lifebox.cl"
-              target="blank"
-              :style="{ color: 'inherit' }"
-            >
-              @Lifebox
-            </a>
-          </p>
-          <section class="mt-4">
-            <v-btn
-              v-for="social in profiles"
-              :key="social.network"
-              variant="flat"
-              class="text-none rounded-2 mr-2"
-              :prepend-icon="social.icon"
-              :color="social.color"
-              :href="social.url"
-              target="blank"
-            >
-              {{ social.network }}
-            </v-btn>
-          </section>
-        </v-card-item>
-      </v-overlay>
-    </client-only>
-    <v-img
-      width="50%"
-      min-width="300"
-      height="100%"
-      cover
-      class="rounded-ts-circle float-right"
+  <u-card class="relative min-h-[300px]">
+    <img
       src="/myself.jpg"
-    ></v-img>
-  </v-card>
+      alt="Rodrigo Pizarro profile image"
+      class="absolute h-full right-0 top-0 rounded-r-lg rounded-tl-[50%]"
+    />
+    <section class="absolute bottom-0 pb-4">
+      <h1 class="text-4xl font-bold text-white">Rodrigo Pizarro Regueiro</h1>
+      <p class="text-yellow-100">Software Engineer @Lifebox</p>
+      <div class="my-4 flex gap-2">
+        <u-button color="blue">
+          <template #leading>
+            <UIcon name="i-mdi-linkedin" size="20" dynamic />
+          </template>
+          Linkedin
+        </u-button>
+        <u-button color="gray" icon="i-mdi-github">
+          GitHub
+          <template #leading>
+            <UIcon name="i-mdi-github" size="20" dynamic />
+          </template>
+        </u-button>
+      </div>
+    </section>
+  </u-card>
 </template>
 
 <script setup>
@@ -74,11 +41,4 @@ const profiles = [
     url: "https://github.com/baaltrodrigo",
   },
 ];
-
-const props = defineProps({
-  height: {
-    type: String,
-    default: "100%",
-  },
-});
 </script>
