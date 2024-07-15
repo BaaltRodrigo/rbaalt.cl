@@ -1,7 +1,5 @@
 export default defineAppConfig({
   ui: {
-    primary: "indigo",
-    gray: "zinc",
     variables: {
       light: {
         background: "white",
@@ -9,9 +7,6 @@ export default defineAppConfig({
       dark: {
         background: "black",
       },
-    },
-    card: {
-      background: "purple",
     },
   },
 });
