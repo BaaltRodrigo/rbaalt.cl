@@ -1,6 +1,6 @@
 <template>
   <article
-    class="relative min-h-[300px] h-auto border-2 rounded-xl bg-purple-500 bg-opacity-50 border-purple-700"
+    class="relative isolated glass min-h-[300px] h-auto border-2 rounded-xl bg-purple-500 bg-opacity-50 border-purple-700"
   >
     <img
       src="/myself.jpg"
