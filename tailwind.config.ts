@@ -2,9 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default <Partial<Config>>{
   plugins: [require("daisyui")],
+  // prefix: "tw-", // Adds a custom prefix to the generated classes
+
   daisyui: {
     themes: ["forest", "coffee"],
   },
+
   theme: {
     extend: {
       aspectRatio: {

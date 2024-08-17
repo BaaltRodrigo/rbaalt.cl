@@ -21,7 +21,13 @@ useSeoMeta({
 </script>
 
 <template>
-  <UMain>
-    <nuxt-page></nuxt-page>
-  </UMain>
+  <NuxtPage></NuxtPage>
 </template>
+
+<style lang="scss">
+.prevent-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+</style>

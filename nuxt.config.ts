@@ -3,7 +3,10 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-07-13",
   devtools: { enabled: true },
-  extends: ["@nuxt/ui-pro"],
+  // extends: ["@nuxt/ui-pro"],
   modules: ["@nuxt/ui"],
+  ui: {
+    disableGlobalStyles: true,
+  },
   ssr: true,
 });
