@@ -21,6 +21,7 @@ useSeoMeta({
 <template>
   <v-app>
     <v-main class="background-constellation">
+      <v-alert>Esto esta solamente en una rama</v-alert>
       <v-container class="pt-8" style="max-width: 75rem">
         <!--Top Section with big box and 2 on the next column-->
         <section class="py-3">
