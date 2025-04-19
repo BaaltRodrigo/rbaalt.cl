@@ -11,14 +11,14 @@
   },
   "dependencies": {
     "@fontsource/exo-2": "^5.0.16",
-    "@mdi/font": "^7.3.67",
+    "@nuxtjs/tailwindcss": "^6.13.2",
+    "@tailwindcss/vite": "^4.1.4",
     "nuxt": "^3.11.2",
     "sass": "^1.70.0",
     "sass-loader": "^14.1.0",
+    "tailwindcss": "^4.1.4",
     "vite-plugin-vuetify": "^2.0.3",
     "vue": "^3.4.27",
-    "vue-router": "^4.3.2",
-    "vuetify": "^3.6.8",
-    "vuetify-nuxt-module": "^0.14.1"
+    "vue-router": "^4.3.2"
   }
 }

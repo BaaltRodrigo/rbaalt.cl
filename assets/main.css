@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Prevent overscroll and set background color */
+html,
+body {
+  overscroll-behavior: none;
+}
