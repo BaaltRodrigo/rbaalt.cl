@@ -1,19 +1,56 @@
 <template>
-  <div class="border-l-1 border-slate-400 pl-1">
-    <template v-for="experience in experiences" :key="experience.id">
-      <section class="flex gap-5 mb-10">
-        <header class="flex flex-col gap-2 w-sm pl-6">
-          <span
-            class="block w-3 h-3 bg-white border-2 rounded-full absolute mt-1 -ml-7"
-          ></span>
+  <div
+    class="hidden md:flex gap-8 py-8 border-l border-gray-700 relative items-start"
+  >
+    <!-- Left -->
+    <header class="sticky top-8 z-10 bg-[#0e1629] md:min-w-xs">
+      <div class="pl-4 relative">
+        <div
+          class="absolute -left-1.25 top-[0.25rem] w-2.25 h-2.25 bg-white rounded-full"
+        ></div>
+        <div class="flex flex-col gap-2">
+          <p class="text-sm text-gray-400">Aug, 2020 – Oct, 2022</p>
+          <h3 class="text-2xl line-clamp-2 font-semibold text-white">
+            Acme Corp
+          </h3>
+          <p class="text-sm text-gray-400">Software Engineer</p>
+        </div>
+      </div>
+    </header>
 
-          <p class="text-slate-400">{{ experience.date }}</p>
-          <h4 class="text-2xl text-slate-100">{{ experience.company }}</h4>
-        </header>
+    <!-- Right: Image & Description -->
+    <div class="flex-1 pb-5 border-b-1 border-gray-700">
+      <img
+        src="https://picsum.photos/600/300"
+        alt="Project screenshot"
+        class="rounded-lg mb-4 border border-gray-700 aspect-16/9 w-full object-cover bg-gray-700"
+      />
+      <p class="text-gray-300">
+        Led the frontend development of a complex financial dashboard using Vue
+        and TailwindCSS. Collaborated with backend engineers to design and
+        implement secure API integrations. Also contributed to component library
+        used across the company’s internal tools.
+      </p>
+    </div>
+  </div>
 
-        <article></article>
-      </section>
-    </template>
+  <!-- Mobile Version -->
+  <div class="md:hidden flex flex-col gap-2 py-8 border-b border-gray-700">
+    <p class="text-sm text-gray-400">Aug, 2020 – Oct, 2022</p>
+    <h3 class="text-xl font-semibold text-white">Acme Corp</h3>
+    <p class="text-sm text-gray-400 -mt-1">Software Engineer</p>
+
+    <img
+      src="https://picsum.photos/600/300"
+      alt="Project screenshot"
+      class="rounded-lg border border-gray-700 aspect-16/9 object-cover"
+    />
+    <p class="text-gray-300">
+      Led the frontend development of a complex financial dashboard using Vue
+      and TailwindCSS. Collaborated with backend engineers to design and
+      implement secure API integrations. Also contributed to component library
+      used across the company’s internal tools.
+    </p>
   </div>
 </template>
 
