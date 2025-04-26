@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="flex flex-col gap-4">
     <h1 class="text-4xl text-slate-100">Rodrigo Pizarro Regueiro</h1>
     <p class="text-slate-300 font-medium opacity-80 w-full md:max-w-lg">
       Judoka and software engineer with +6 years of experience on software
