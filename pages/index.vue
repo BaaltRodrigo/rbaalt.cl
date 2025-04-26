@@ -16,7 +16,20 @@
       :hide-separator="index === experiences.length - 1"
     ></timeline>
   </section>
-  <div class="border-b-1 border-gray-700"></div>
+  <!-- <div class="border-b-1 border-gray-700"></div> -->
+  <section class="w-full grid grid-cols-1 border-t border-b border-gray-700">
+    <a
+      :class="[
+        'text-slate-200 font-medium hover:text-sky-200',
+        'py-4 w-full text-center',
+        'hover:bg-gray-700 transition-colors duration-200',
+        'hover:cursor-pointer',
+      ]"
+    >
+      Check out more experiences
+    </a>
+  </section>
+
   <section class="h-screen"></section>
 </template>
 
