@@ -1,6 +1,6 @@
 <template>
   <div
-    class="hidden md:flex gap-8 py-8 border-l border-gray-700 relative items-start"
+    class="hidden md:flex gap-8 pt-8 border-l border-gray-700 relative items-start"
   >
     <!-- Left -->
     <header class="sticky top-25 md:min-w-xs">
@@ -21,14 +21,14 @@
     <!-- Right: Image & Description -->
     <div
       class="flex-1"
-      :class="[hideSeparator ? 'border-b-0' : 'border-b border-gray-700 pb-5']"
+      :class="[hideSeparator ? 'border-b-0' : 'border-b border-gray-700']"
     >
       <img
         :src="image"
         alt="Project screenshot"
         class="rounded-lg mb-4 border border-gray-700 aspect-16/9 w-full object-cover bg-gray-700"
       />
-      <p class="text-gray-300">
+      <p class="text-gray-300 pb-8">
         {{ description }}
       </p>
     </div>
