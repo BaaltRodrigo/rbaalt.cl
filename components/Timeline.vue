@@ -6,7 +6,7 @@
     <header class="sticky top-25 md:min-w-xs">
       <div class="pl-4 relative">
         <div
-          class="absolute -left-1.25 top-[0.25rem] w-2.25 h-2.25 bg-white rounded-full"
+          class="absolute -left-1 top-[0.25rem] w-2.25 h-2.25 bg-white rounded-full"
         ></div>
         <div class="flex flex-col gap-2">
           <p class="text-sm text-gray-400">Aug, 2020 – Oct, 2022</p>
