@@ -11,12 +11,18 @@
           'text-sky-200 font-medium hover:text-purple-400 transition-colors duration-200 py-2',
           'hover:cursor-pointer',
         ]"
+        href="https://www.linkedin.com/in/baaltrodrigo"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         LinkedIn
       </a>
       <p class="text-slate-200">·</p>
       <a
         class="text-sky-200 font-medium hover:text-purple-400 transition-colors duration-200 hover:cursor-pointer py-2"
+        href="https://github.com/baaltrodrigo"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         GitHub
       </a>
