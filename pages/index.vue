@@ -7,7 +7,7 @@
     <h2 class="text-3xl text-slate-200 my-5">Last working experiences</h2>
     <timeline></timeline>
     <timeline></timeline>
-    <timeline></timeline>
+    <timeline hide-separator></timeline>
   </section>
   <div class="border-b-1 border-gray-700"></div>
   <section class="h-screen"></section>
