@@ -9,11 +9,11 @@
           class="absolute -left-1 top-[0.25rem] w-2.25 h-2.25 bg-white rounded-full"
         ></div>
         <div class="flex flex-col gap-2">
-          <p class="text-sm text-gray-400">Aug, 2020 – Oct, 2022</p>
+          <p class="text-sm text-gray-400">{{ dates }}</p>
           <h3 class="text-2xl line-clamp-2 font-semibold text-white">
-            Acme Corp
+            {{ company }}
           </h3>
-          <p class="text-sm text-gray-400">Software Engineer</p>
+          <p class="text-sm text-gray-400">{{ position }}</p>
         </div>
       </div>
     </header>
@@ -24,15 +24,12 @@
       :class="[hideSeparator ? 'border-b-0' : 'border-b border-gray-700 pb-5']"
     >
       <img
-        src="https://picsum.photos/600/300"
+        :src="image"
         alt="Project screenshot"
         class="rounded-lg mb-4 border border-gray-700 aspect-16/9 w-full object-cover bg-gray-700"
       />
       <p class="text-gray-300">
-        Led the frontend development of a complex financial dashboard using Vue
-        and TailwindCSS. Collaborated with backend engineers to design and
-        implement secure API integrations. Also contributed to component library
-        used across the company’s internal tools.
+        {{ description }}
       </p>
     </div>
   </div>
@@ -42,20 +39,17 @@
     class="md:hidden flex flex-col gap-2 my-8"
     :class="[hideSeparator ? 'border-b-0' : 'border-b border-gray-700']"
   >
-    <p class="text-sm text-gray-400">Aug, 2020 – Oct, 2022</p>
-    <h3 class="text-xl font-semibold text-white">Acme Corp</h3>
-    <p class="text-sm text-gray-400 -mt-1">Software Engineer</p>
+    <p class="text-sm text-gray-400">{{ dates }}</p>
+    <h3 class="text-xl font-semibold text-white">{{ company }}}</h3>
+    <p class="text-sm text-gray-400 -mt-1">{{ position }}</p>
 
     <img
-      src="https://picsum.photos/600/300"
+      :src="image"
       alt="Project screenshot"
       class="rounded-lg border border-gray-700 aspect-16/9 object-cover"
     />
     <p class="text-gray-300" :class="[hideSeparator ? 'pb-0' : 'pb-8']">
-      Led the frontend development of a complex financial dashboard using Vue
-      and TailwindCSS. Collaborated with backend engineers to design and
-      implement secure API integrations. Also contributed to component library
-      used across the company’s internal tools.
+      {{ description }}
     </p>
   </div>
 </template>
@@ -66,29 +60,25 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  company: {
+    type: String,
+    default: "Company",
+  },
+  position: {
+    type: String,
+    default: "Position/Role",
+  },
+  dates: {
+    type: String,
+    default: "Start - End",
+  },
+  image: {
+    type: String,
+    default: "https://picsum.photos/600/300",
+  },
+  description: {
+    type: String,
+    default: "Description of the job and responsibilities.",
+  },
 });
-
-const experiences = [
-  {
-    title: "Software Engineer",
-    company: "Company A",
-    date: "2022 - Present",
-    description: "Description of the job and responsibilities.",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    title: "Software Engineer",
-    company: "Company B",
-    date: "2021 - 2022",
-    description: "Description of the job and responsibilities.",
-    image: "https://via.placeholder.com/150",
-  },
-  {
-    title: "Software Engineer",
-    company: "Company C",
-    date: "2020 - 2021",
-    description: "Description of the job and responsibilities.",
-    image: "https://via.placeholder.com/150",
-  },
-];
 </script>
