@@ -24,23 +24,26 @@
 const experiences = [
   {
     title: "Software Engineer",
-    company: "Company A",
-    date: "2022 - Present",
-    description: "Description of the job and responsibilities.",
+    company: "Lifebox",
+    date: "Mar, 2024 - Present",
+    description:
+      "Part of the Digital and Innovation team to develop better learning experiences inside our LMS platform. Mainly focused on the frontend development of the different products and services for clients and internal teams.",
     image: "https://picsum.photos/600/300",
   },
   {
     title: "Software Engineer",
-    company: "Company B",
-    date: "2021 - 2022",
-    description: "Description of the job and responsibilities.",
+    company: "Facilita SPA",
+    date: "Mar, 2019 - Jan, 2024",
+    description:
+      "Lead of the digital transformation of several of the company products. Making the transition from desktop to web applications.",
     image: "https://picsum.photos/600/300",
   },
   {
-    title: "Software Engineer",
-    company: "Company C",
-    date: "2020 - 2021",
-    description: "Description of the job and responsibilities.",
+    title: "Tech Lead",
+    company: "CronApp - Chile",
+    date: "May, 2022 - Aug, 2023",
+    description:
+      "Team lead of the development team that launched the first functional product. Actively involved on the decision making and architecture of the medical tracking for diabetes and hearth diseases on Chilean CESFAM.",
     image: "https://picsum.photos/600/300",
   },
 ];
