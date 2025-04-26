@@ -3,5 +3,6 @@
 /* Prevent overscroll and set background color */
 html,
 body {
+  background-color: oklch(21% 0.034 264.665); /* Tailwind gray-900 */
   overscroll-behavior: none;
 }

@@ -2,7 +2,6 @@
 const LINKS = {
   linkedin: "https://www.linkedin.com/in/baaltrodrigo/",
   github: "https://github.com/baaltrodrigo",
-  originalLayout: "https://erickvpomie.vercel.app/",
 };
 
 const pageTitle = "Rodrigo Pizarro - Software Engineer";
@@ -19,7 +18,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="w-screen bg-lime-600">
+  <div class="w-screen">
     <nuxt-page></nuxt-page>
   </div>
 </template>
