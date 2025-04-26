@@ -3,7 +3,7 @@
     class="hidden md:flex gap-8 py-8 border-l border-gray-700 relative items-start"
   >
     <!-- Left -->
-    <header class="sticky top-25 bg-[#0e1629] md:min-w-xs">
+    <header class="sticky top-25 md:min-w-xs">
       <div class="pl-4 relative">
         <div
           class="absolute -left-1.25 top-[0.25rem] w-2.25 h-2.25 bg-white rounded-full"
