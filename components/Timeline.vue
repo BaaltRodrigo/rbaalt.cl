@@ -3,7 +3,7 @@
     class="hidden md:flex gap-8 py-8 border-l border-gray-700 relative items-start"
   >
     <!-- Left -->
-    <header class="sticky top-8 z-10 bg-[#0e1629] md:min-w-xs">
+    <header class="sticky top-25 bg-[#0e1629] md:min-w-xs">
       <div class="pl-4 relative">
         <div
           class="absolute -left-1.25 top-[0.25rem] w-2.25 h-2.25 bg-white rounded-full"
@@ -35,7 +35,7 @@
   </div>
 
   <!-- Mobile Version -->
-  <div class="md:hidden flex flex-col gap-2 py-8 border-b border-gray-700">
+  <div class="md:hidden flex flex-col gap-2 my-8 border-b border-gray-700">
     <p class="text-sm text-gray-400">Aug, 2020 – Oct, 2022</p>
     <h3 class="text-xl font-semibold text-white">Acme Corp</h3>
     <p class="text-sm text-gray-400 -mt-1">Software Engineer</p>
@@ -45,7 +45,7 @@
       alt="Project screenshot"
       class="rounded-lg border border-gray-700 aspect-16/9 object-cover"
     />
-    <p class="text-gray-300">
+    <p class="text-gray-300 pb-8">
       Led the frontend development of a complex financial dashboard using Vue
       and TailwindCSS. Collaborated with backend engineers to design and
       implement secure API integrations. Also contributed to component library
