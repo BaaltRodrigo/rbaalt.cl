@@ -40,7 +40,7 @@
     :class="[hideSeparator ? 'border-b-0' : 'border-b border-gray-700']"
   >
     <p class="text-sm text-gray-400">{{ dates }}</p>
-    <h3 class="text-xl font-semibold text-white">{{ company }}}</h3>
+    <h3 class="text-xl font-semibold text-white">{{ company }}</h3>
     <p class="text-sm text-gray-400 -mt-1">{{ position }}</p>
 
     <img
