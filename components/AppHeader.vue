@@ -5,7 +5,14 @@
     <div
       class="max-w-[1050px] mx-auto flex items-center justify-between w-full"
     >
-      <h1 class="text-2xl font-bold text-white">rbaalt</h1>
+      <a href="/" class="flex items-center gap-2">
+        <img
+          src="/myself.jpg"
+          alt="Profile picture"
+          class="w-10 h-10 rounded-full"
+        />
+        <h1 class="text-2xl font-bold text-white">rbaalt</h1>
+      </a>
       <a
         href="https://www.linkedin.com/in/baaltrodrigo"
         role="button"
