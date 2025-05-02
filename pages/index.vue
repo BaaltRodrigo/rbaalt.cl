@@ -16,8 +16,18 @@
       :hide-separator="index === experiences.length - 1"
     ></timeline>
   </section>
+
+  <section class="w-full mx-auto border-y border-gray-700">
+    <div class="max-w-5xl mx-auto px-5 py-10">
+      <h2 class="text-3xl text-slate-200 text-center mb-5">
+        My top tech stack
+      </h2>
+      <home-stack-grid></home-stack-grid>
+    </div>
+  </section>
+
   <!-- <div class="border-b-1 border-gray-700"></div> -->
-  <section class="w-full grid grid-cols-1 border-t border-b border-gray-700">
+  <!-- <section class="w-full grid grid-cols-1 border-t border-b border-gray-700">
     <a
       :class="[
         'text-slate-200 font-medium hover:text-sky-200',
@@ -28,7 +38,7 @@
     >
       Check out more experiences
     </a>
-  </section>
+  </section> -->
 
   <section class="h-screen"></section>
 </template>
