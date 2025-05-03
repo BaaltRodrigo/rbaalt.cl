@@ -66,7 +66,7 @@ const experiences = [
     company: "CronApp - Chile",
     date: "May, 2022 - Aug, 2023",
     description:
-      "Team lead of the development team that launched the first functional product. Actively involved on the decision making and architecture of the medical tracking for diabetes and hearth diseases on Chilean CESFAM.",
+      "Team lead of the development team that launched the first functional product. Actively involved on the decision making and architecture design of the medical tracking app for diabetes and hearth diseases on Chilean CESFAM.",
     image: "https://picsum.photos/600/300",
   },
 ];
