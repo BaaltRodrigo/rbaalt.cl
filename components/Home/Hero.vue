@@ -1,9 +1,11 @@
 <template>
   <section class="flex flex-col gap-4">
     <h1 class="text-4xl text-slate-100">Rodrigo Pizarro Regueiro</h1>
-    <p class="text-slate-300 font-medium opacity-80 w-full md:max-w-lg">
-      Judoka and software engineer with +6 years of experience on software
-      development and engineering user friendly solutions
+    <p
+      class="text-slate-300 font-medium opacity-80 w-full md:max-w-lg text-pretty"
+    >
+      Judoka and software engineer from Chile with +6 years of experience on
+      software development and engineering user friendly solutions.
     </p>
     <div class="flex items-center gap-4">
       <a
