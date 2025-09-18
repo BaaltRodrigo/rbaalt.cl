@@ -26,7 +26,7 @@
       <img
         :src="image"
         alt="Project screenshot"
-        class="rounded-lg mb-4 border border-gray-700 aspect-16/9 w-full object-cover bg-gray-700"
+        class="rounded-lg mb-4 border border-gray-700 aspect-16/9 w-full object-cover bg-transparent"
       />
       <p class="text-gray-300 pb-8">
         {{ description }}
@@ -48,7 +48,7 @@
       alt="Project screenshot"
       class="rounded-lg border border-gray-700 aspect-16/9 object-cover"
     />
-    <p class="text-gray-300" :class="[hideSeparator ? 'pb-0' : 'pb-8']">
+    <p class="text-gray -300" :class="[hideSeparator ? 'pb-0' : 'pb-8']">
       {{ description }}
     </p>
   </div>
