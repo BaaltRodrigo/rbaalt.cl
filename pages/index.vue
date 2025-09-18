@@ -51,23 +51,23 @@ const experiences = [
     date: "Mar, 2024 - Present",
     description:
       "Part of the Digital and Innovation team to develop better learning experiences inside our LMS platform. Mainly focused on the frontend development of the different products and services for clients and internal teams.",
-    image: "https://picsum.photos/600/300",
+    image: "./working-with/lifebox-image.webp",
   },
   {
     title: "Software Engineer",
     company: "Facilita SPA",
     date: "Mar, 2019 - Jan, 2024",
     description:
-      "Lead of the digital transformation of several of the company products. Making the transition from desktop to web applications.",
-    image: "https://picsum.photos/600/300",
+      "In charge of the digital transformation on several of the company products. Making the transition from desktop applications to web applications.",
+    image: "./working-with/facilita.png",
   },
   {
     title: "Tech Lead",
     company: "CronApp - Chile",
     date: "May, 2022 - Aug, 2023",
     description:
-      "Team lead of the development team that launched the first functional product. Actively involved on the decision making and architecture design of the medical tracking app for diabetes and hearth diseases on Chilean CESFAM.",
-    image: "https://picsum.photos/600/300",
+      "Tech lead of the team that launched the first functional product. Actively involved on the decision making and architecture design of the medical tracking app for diabetes and hearth diseases on Chilean CESFAM.",
+    image: "./working-with/cronapp.png",
   },
 ];
 </script>
