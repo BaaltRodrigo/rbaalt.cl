@@ -40,7 +40,21 @@
     </a>
   </section> -->
 
-  <section class="h-screen"></section>
+  <section class="h-screen">
+    <div class="flex flex-col items-center justify-end h-full px-5 pb-12">
+      <p class="text-gray-400 text-lg mb-4">
+        Did you keep scrolling to reach this point? Just contact me on LinkedIn.
+      </p>
+      <a
+        href="https://www.linkedin.com/in/baaltrodrigo"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block px-6 py-2 bg-sky-600 hover:bg-sky-700 text-white rounded-lg font-semibold transition-colors duration-200 shadow"
+      >
+        Contact me
+      </a>
+    </div>
+  </section>
 </template>
 
 <script setup>
