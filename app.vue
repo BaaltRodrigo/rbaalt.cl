@@ -1,4 +1,7 @@
 <script setup>
+import "@fontsource/montaga";
+import "@fontsource/exo-2";
+
 const LINKS = {
   linkedin: "https://www.linkedin.com/in/baaltrodrigo/",
   github: "https://github.com/baaltrodrigo",
@@ -18,7 +21,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="w-screen">
+  <div class="w-screen" style="font-family: 'Exo 2'">
     <nuxt-page></nuxt-page>
   </div>
 </template>
