@@ -14,9 +14,8 @@
         <h1 class="text-2xl font-bold text-white">rbaalt</h1>
       </a>
       <a
-        href="https://www.linkedin.com/in/baaltrodrigo"
+        href="https://psp.lifebox.cl"
         role="button"
-        target="_blank"
         class="text-sm font-medium text-blue-400 border border-blue-500 rounded-xl px-4 py-2 hover:bg-blue-500 hover:text-white transition"
       >
         Contact
