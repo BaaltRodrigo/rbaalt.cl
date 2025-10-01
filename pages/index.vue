@@ -65,7 +65,7 @@ const experiences = [
     date: "Mar, 2024 - Present",
     description:
       "Part of the Digital and Innovation team to develop better learning experiences inside our LMS platform. Mainly focused on the frontend development of the different products and services for clients and internal teams.",
-    image: "./working-with/lifebox-image.webp",
+    image: "",
   },
   {
     title: "Software Engineer",
