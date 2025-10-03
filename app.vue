@@ -1,5 +1,4 @@
 <script setup>
-import "@fontsource/montaga";
 import "@fontsource/exo-2";
 
 const LINKS = {
