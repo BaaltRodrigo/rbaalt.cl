@@ -39,10 +39,10 @@ useSeoMeta({
                   >
                     <v-card-item>
                       <v-card-title>
-                        <h2 class="text-h5">About Me</h2>
+                        <h2 class="text-headline-small">About Me</h2>
                       </v-card-title>
                     </v-card-item>
-                    <v-card-text class="text-pretty text-body-2">
+                    <v-card-text class="text-pretty text-body-medium">
                       Judoka and Software Engineer focused on deliver user
                       friendly solutions. I have been working with web
                       technologies for more than 5 years.
@@ -55,8 +55,8 @@ useSeoMeta({
                     color="#feefc3"
                     class="pa-3 rounded-5 text-grey-darken-4 d-flex flex-column justify-center align-center"
                   >
-                    <p class="text-h2 text-center">+5</p>
-                    <h3 class="text-body-1 font-weight-regular text-center">
+                    <p class="text-display-large text-center">+5</p>
+                    <h3 class="text-body-large font-weight-regular text-center">
                       Years of experience
                     </h3>
                   </v-sheet>
@@ -75,7 +75,7 @@ useSeoMeta({
                       alt="Chilean flag"
                     ></v-img>
 
-                    <h3 class="text-body-1 ma-auto">From Chile</h3>
+                    <h3 class="text-body-large ma-auto">From Chile</h3>
                   </v-card>
                 </v-col>
               </v-row>
@@ -85,13 +85,13 @@ useSeoMeta({
         <!-- Last Working experiences -->
         <section class="py-4">
           <div class="text-center">
-            <h2 class="text-h4 text-grey-lighten-4">Working experiences</h2>
-            <p class="text-body-1 mt-1 mb-5 text-grey-lighten-3">
+            <h2 class="text-headline-large text-grey-lighten-4">Working experiences</h2>
+            <p class="text-body-large mt-1 mb-5 text-grey-lighten-3">
               Companies I have worked with
             </p>
           </div>
           <!-- Cards of experiences -->
-          <v-row justify="center">
+          <v-row class="justify-center">
             <v-col cols="12" sm="8" md="4">
               <WorkingWith
                 company="Facilita SPA"
@@ -120,8 +120,8 @@ useSeoMeta({
         </section>
         <!-- Some of the last projects -->
         <!-- <section class="py-8 text-center">
-          <h2 class="text-h4">My last projects</h2>
-          <p class="text-body-2 my-3">
+          <h2 class="text-headline-large">My last projects</h2>
+          <p class="text-body-medium my-3">
             A showcase for some of the projects I made or help to develop
           </p>
         </section> -->
@@ -135,7 +135,7 @@ useSeoMeta({
             >
               <div>
                 <p>© 2024 Rodrigo Pizarro.</p>
-                <p class="text-body-2">
+                <p class="text-body-medium">
                   Based on the layout of
                   <a
                     :href="LINKS.originalLayout"
@@ -145,7 +145,7 @@ useSeoMeta({
                     Erick Pomié
                   </a>
                 </p>
-                <p class="text-body-2">
+                <p class="text-body-medium">
                   Special thanks to
                   <a
                     href="https://midu.dev/"
@@ -156,7 +156,7 @@ useSeoMeta({
                   </a>
                 </p>
                 <a
-                  class="text-grey-lighten-3 text-body-2"
+                  class="text-grey-lighten-3 text-body-medium"
                   href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/"
                   >Free SVG Backgrounds and Patterns by SVGBackgrounds.com</a
                 >

@@ -16,11 +16,11 @@
       >
         <v-card-item class="ml-4 mb-4">
           <v-card-title>
-            <h1 class="text-h4 text-white font-weight-bold">
+            <h1 class="text-headline-large text-white font-weight-bold">
               Rodrigo Pizarro Regueiro
             </h1>
           </v-card-title>
-          <p class="text-body-1 text-amber-lighten-3 mt-1">
+          <p class="text-body-large text-amber-lighten-3 mt-1">
             Software Engineer
             <a
               class="text-decoration-none text-color-amber-lighten-3"

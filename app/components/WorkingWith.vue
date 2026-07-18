@@ -5,14 +5,14 @@
   >
     <!-- Logo of the company -->
     <template #prepend>
-      <v-avatar rounded="0" size="75">
+      <v-avatar rounded="0" size="75" color="transparent">
         <v-img :src="image" alt="Logo of a company I have worked with"></v-img>
       </v-avatar>
     </template>
     <template #title>
-      <h4 class="text-body-1 font-weight-medium">{{ position }}</h4>
-      <h3 class="text-h5 text-amber-lighten-3">{{ company }}</h3>
-      <p class="text-body-2">{{ dates }}</p>
+      <h4 class="text-body-large font-weight-medium">{{ position }}</h4>
+      <h3 class="text-headline-small text-amber-lighten-3">{{ company }}</h3>
+      <p class="text-body-medium">{{ dates }}</p>
     </template>
   </v-card>
 </template>
