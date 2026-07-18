@@ -1,6 +1,18 @@
 @use "./settings";
 @use "vuetify";
 
+@layer vuetify-core.reset {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+}
+
 .background-constellation {
   background-image: url("./assets/endless-constellation.svg");
   background-repeat: repeat;
