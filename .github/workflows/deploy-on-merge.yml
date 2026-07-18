@@ -16,7 +16,7 @@ jobs:
       - name: "Setup Node"
         uses: actions/setup-node@master
         with:
-          node-version: 20
+          node-version: 22
 
       - name: "Create env file to build"
         run: |
