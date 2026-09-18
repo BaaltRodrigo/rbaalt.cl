@@ -3,11 +3,11 @@
     <h1 class="text-headline-small font-weight-bold">
       Keep software simple and elegant for those who come after.
     </h1>
-    <section>
+    <section style="text-wrap: pretty">
       <p class="text-body-large">
-        I'm a judoka and software engineer from Chile with more than 7 years of
-        experience in the field. I started as a desktop developer and then moved
-        to web technologies.
+        I'm Rodrigo Pizarro, also known as rbaalt, a judoka and software
+        engineer from Chile with more than 7 years of experience in the field. I
+        started as a desktop developer and then moved to web technologies.
       </p>
 
       <p class="text-body-large mt-2">
