@@ -1,5 +1,5 @@
 <template>
-  <v-container class="border-none d-flex flex-column ga-4">
+  <article class="d-flex flex-column ga-4">
     <h1 class="text-headline-small font-weight-bold">
       Keep software simple and elegant for those who come after.
     </h1>
@@ -26,5 +26,5 @@
         </a>
       </p>
     </section>
-  </v-container>
+  </article>
 </template>
