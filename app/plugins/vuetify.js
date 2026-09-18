@@ -6,6 +6,9 @@ import { createVuetify } from "vuetify";
 
 export default defineNuxtPlugin((app) => {
   const vuetify = createVuetify({
+    theme: {
+      defaultTheme: "light",
+    },
     defaults: {
       VContainer: {
         class: "border-s-sm border-e-sm border-b-sm",
