@@ -19,8 +19,10 @@ useSeoMeta({
 
 <template>
   <v-app>
-    <v-main class="d-flex flex-column">
+    <v-main class="d-flex flex-column ga-4">
       <AppHeader />
+
+      <AboutMe />
     </v-main>
   </v-app>
 </template>
