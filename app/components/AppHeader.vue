@@ -1,9 +1,5 @@
 <template>
-  <v-container
-    max-width="900px"
-    min-height="60px"
-    class="border-sm d-flex align-center pa-0"
-  >
+  <v-container min-height="60px" class="border-sm d-flex align-center pa-0">
     <section>
       <v-avatar size="60" class="rounded-0 h-100">
         <img src="/myself.jpg" alt="Rodrigo Pizarro" class="h-100" />
