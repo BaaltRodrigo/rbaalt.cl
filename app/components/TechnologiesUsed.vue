@@ -27,6 +27,6 @@ const technologies = [
   { name: "Vercel", link: "https://vercel.com" },
   { name: "Postgres", link: "https://postgres.org" },
   { name: "MongoDB", link: "https://mongodb.com" },
-  { name: "Firebase", link: "https://firebase.google.com" },
+  { name: "Posthog", link: "https://posthog.com" },
 ];
 </script>
