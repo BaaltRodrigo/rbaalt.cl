@@ -4,7 +4,7 @@
     "url": "https://lifebox.cl",
     "position": "Senior Software Engineer",
     "startDate": "2024-03-01",
-    "summary": "An startup company that provides a Learning Management System (LMS) for companies to train their employees and develop Power Skills. The skills of the future.",
+    "summary": "Learning platform (LMS) that helps companies train employees in Power Skills. I work on the core product as a Senior Software Engineer, focusing on performance, product experience, and internal tooling.",
     "highlights": [
       "Implementation of the MCP Server (Model context protocol) of the company for internal usage. Allowing to connect the company's information and products to different LLMs.",
       "Integration and data analysis of the usage of the platform using Posthog.",
@@ -18,10 +18,21 @@
     "position": "Software Engineer",
     "startDate": "2019-03-01",
     "endDate": "2023-12-01",
-    "summary": "A company that specializes in cloud-based management and human resources software tailored for Chilean business compliance.",
+    "summary": "Cloud-based HR and compliance software for Chilean businesses. Worked on migrating desktop products to the web and improving backend performance.",
     "highlights": [
       "Migrated desktop applications to a web platform with Laravel and Vue.js, enabling cloud-based access for clients",
       "Refactored the database schema to address performance and scalability issues."
+    ]
+  },
+  {
+    "name": "CronApp Chile",
+    "url": "https://cronapp.cl",
+    "position": "Tech Lead",
+    "startDate": "2022-05-01",
+    "endDate": "2023-01-01",
+    "summary": "Led the development team, assigning work to meet delivery deadlines and contributing to product decisions. Also involved in building the core platform for monitoring and self-care of patients with diabetes and hypertension in Chilean Family Health Centers (CESFAM).",
+    "highlights": [
+      "Led the launch of the first functional MVP for chronic-patient sample collection in Chilean public primary care (CESFAM)."
     ]
   },
   {
