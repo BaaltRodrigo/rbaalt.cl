@@ -3,7 +3,7 @@ import WORK_EXPERIENCE from "~/data/work.json";
 
 const pageTitle = "Working Experience - Rodrigo Pizarro";
 const pageDescription =
-  "Work history of Rodrigo Pizarro, including roles at Lifebox, Facilita, CronApp Chile, and the Chilean Army.";
+  "Work history of Rodrigo Pizarro, including roles at Lifebox, Facilita, the Chilean Army and more.";
 
 useSeoMeta({
   title: pageTitle,
@@ -14,7 +14,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <section>
+  <section class="my-4">
     <h1 class="text-headline-small font-weight-bold mb-2">
       Working Experience
     </h1>
