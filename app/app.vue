@@ -1,9 +1,4 @@
 <script setup>
-const LINKS = {
-  linkedin: "https://www.linkedin.com/in/baaltrodrigo/",
-  github: "https://github.com/baaltrodrigo",
-};
-
 const pageTitle = "Rodrigo Pizarro - Software Engineer";
 const pageDescription =
   "Rodrigo Pizarro, Software Engineer focused on deliver user friendly solutions. I have been working with web technologies for more than 5 years.";
