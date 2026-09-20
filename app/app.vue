@@ -21,12 +21,19 @@ useSeoMeta({
   <v-app>
     <v-main>
       <AppHeader />
-      <v-container class="border-none">
+      <v-container class="border-none pb-16">
         <AboutMe class="my-4" />
 
         <v-divider class="my-6" />
 
         <WorkingExperience class="my-4" />
+
+        <v-divider class="my-6" />
+
+        <h2 class="text-headline-small font-weight-bold mb-4">
+          Technologies I have used
+        </h2>
+        <TechnologiesUsed />
       </v-container>
     </v-main>
   </v-app>
