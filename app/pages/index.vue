@@ -32,7 +32,12 @@ const showCaseExperience = WORK_EXPERIENCE.filter((exp) =>
     </p>
     <WorkingExperience :experiences="showCaseExperience" />
     <v-container class="d-flex justify-end pa-0 border-none">
-      <v-btn class="w-100 rounded-0 border-sm" max-width="300" variant="text">
+      <v-btn
+        class="w-100 rounded-0 border-sm"
+        max-width="300"
+        variant="text"
+        to="/working-experience"
+      >
         See more
       </v-btn>
     </v-container>
