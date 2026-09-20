@@ -43,56 +43,5 @@
 </template>
 
 <script setup>
-/**
- * This working experiences are the "work" field into the JsonResume schema.
- * {
- *  "name": "Company",
- *  "position": "President",
- *  "url": "https://company.com",
- *  "startDate": "2013-01-01",
- *  "endDate": "2014-01-01",
- *  "summary": "Description…",
- *  "highlights": [
- *    "Started the company"
- *  ],
- * },
- */
-const WORK_EXPERIENCE = [
-  {
-    name: "Lifebox",
-    url: "https://lifebox.cl",
-    position: "Senior Software Engineer",
-    startDate: "2024-03-01",
-    summary:
-      "An startup company that provides a Learning Management System (LMS) for companies to train their employees and develop Power Skills. The skills of the future.",
-    highlights: [
-      "Implementation of the MCP Server (Model context protocol) of the company for internal usage. Allowing to connect the company's information and products to different LLMs.",
-      "Integration and data analysis of the usage of the platform using Posthog.",
-      "Leader of the responsive design of the Power Skills Platform, our LMS, allowing to have a consistent experience across all devices.",
-      "Optimization of the performance of the platform, allowing ~5000 users to use our LMS simultaneously.",
-    ],
-  },
-  {
-    name: "Facilita",
-    url: "https://facilita.cl",
-    position: "Software Engineer",
-    startDate: "2019-03-01",
-    endDate: "2023-12-01",
-    summary:
-      "A company that specializes in cloud-based management and human resources software tailored for Chilean business compliance.",
-    highlights: [
-      "Migrated desktop applications to a web platform with Laravel and Vue.js, enabling cloud-based access for clients",
-      "Refactored the database schema to address performance and scalability issues.",
-    ],
-  },
-  {
-    name: "Chilean Army",
-    position: "Developer",
-    startDate: "2019-09-01",
-    endDate: "2020-03-01",
-    summary:
-      "Due to a NDA, I cannot say what I was doing here. But it was a great experience.",
-    highlights: ["[REDACTED]", "[REDACTED]"],
-  },
-];
+import WORK_EXPERIENCE from "~/data/work.json";
 </script>
