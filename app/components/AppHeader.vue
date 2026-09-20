@@ -11,21 +11,31 @@
 
     <section>
       <v-btn
+        v-for="link in LINKS"
+        :key="link.name"
         variant="text"
         height="60"
         class="rounded-0 border-s-sm"
-        prepend-icon="mdi-linkedin"
-      >
-        LinkedIn
-      </v-btn>
-      <v-btn
-        variant="text"
-        height="60"
-        class="rounded-0 border-s-sm"
-        prepend-icon="mdi-github"
-      >
-        Github
-      </v-btn>
+        :href="link.url"
+        target="_blank"
+        :prepend-icon="link.icon"
+        :text="link.name"
+      />
     </section>
   </v-container>
 </template>
+
+<script setup lang="ts">
+const LINKS = [
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/baaltrodrigo/",
+    icon: "mdi-linkedin",
+  },
+  {
+    name: "Github",
+    url: "https://github.com/baaltrodrigo",
+    icon: "mdi-github",
+  },
+];
+</script>
