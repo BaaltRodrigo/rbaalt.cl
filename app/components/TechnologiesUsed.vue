@@ -18,15 +18,5 @@
 </template>
 
 <script setup lang="ts">
-const technologies = [
-  { name: "Laravel", link: "https://laravel.com" },
-  { name: "Nuxt", link: "https://nuxt.com" },
-  { name: "Django", link: "https://djangoproject.com" },
-  { name: "Azure", link: "https://azure.microsoft.com" },
-  { name: "Cloudflare", link: "https://cloudflare.com" },
-  { name: "Vercel", link: "https://vercel.com" },
-  { name: "Postgres", link: "https://postgres.org" },
-  { name: "MongoDB", link: "https://mongodb.com" },
-  { name: "Posthog", link: "https://posthog.com" },
-];
+import technologies from "~/data/technologies.json";
 </script>
