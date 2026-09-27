@@ -3,7 +3,7 @@ import EXPERIENCE from "~/data/experience.json";
 
 const pageTitle = "Rodrigo Pizarro - Software Engineer";
 const pageDescription =
-  "Rodrigo Pizarro, Software Engineer focused on deliver user friendly solutions. I have been working with web technologies for more than 5 years.";
+  "Rodrigo Pizarro, Software Engineer focused on deliver user friendly solutions. I have been working with web technologies for more than 7 years.";
 
 useSeoMeta({
   title: pageTitle,
@@ -54,5 +54,37 @@ const showCaseExperience = EXPERIENCE.work.filter((exp) =>
       selection of the ones I consider the most relevant.
     </p>
     <TechnologiesUsed />
+  </section>
+
+  <v-divider class="my-6" />
+
+  <section style="text-wrap: pretty">
+    <h2 class="text-headline-small font-weight-bold mb-2">How to reach me</h2>
+    <p class="text-body-medium text-medium-emphasis">
+      If you want to get in touch with me, you can find me on linkedin or
+      github.
+    </p>
+    <p class="text-body-medium mb-4 text-medium-emphasis">
+      Linkedin is the best way to get in touch with me.
+    </p>
+
+    <v-btn
+      class="rounded-0"
+      variant="outlined"
+      href="https://www.linkedin.com/in/baaltrodrigo/"
+      target="_blank"
+      prepend-icon="mdi-linkedin"
+    >
+      LinkedIn
+    </v-btn>
+    <v-btn
+      class="rounded-0"
+      variant="text"
+      href="https://github.com/baaltrodrigo"
+      target="_blank"
+      prepend-icon="mdi-github"
+    >
+      Github
+    </v-btn>
   </section>
 </template>
