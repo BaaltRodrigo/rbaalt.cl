@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WORK_EXPERIENCE from "~/data/work.json";
+import EXPERIENCE from "~/data/experience.json";
 
 const pageTitle = "Working Experience - Rodrigo Pizarro";
 const pageDescription =
@@ -21,6 +21,6 @@ useSeoMeta({
     <p class="text-body-medium mb-4 text-medium-emphasis">
       A complete list of my professional experience.
     </p>
-    <WorkingExperience :experiences="WORK_EXPERIENCE" />
+    <WorkingExperience :experiences="EXPERIENCE.work" />
   </section>
 </template>
