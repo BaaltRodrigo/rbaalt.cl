@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WORK_EXPERIENCE from "~/data/work.json";
+import EXPERIENCE from "~/data/experience.json";
 
 const pageTitle = "Rodrigo Pizarro - Software Engineer";
 const pageDescription =
@@ -13,7 +13,7 @@ useSeoMeta({
 });
 
 const workingIds = ["Lifebox", "Facilita", "Chilean Army"];
-const showCaseExperience = WORK_EXPERIENCE.filter((exp) =>
+const showCaseExperience = EXPERIENCE.work.filter((exp) =>
   workingIds.includes(exp.name),
 );
 </script>
