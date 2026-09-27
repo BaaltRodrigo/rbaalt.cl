@@ -23,4 +23,16 @@ useSeoMeta({
     </p>
     <WorkingExperience :experiences="EXPERIENCE.work" />
   </section>
+
+  <v-divider class="my-6" />
+
+  <section class="my-4">
+    <h2 class="text-headline-small font-weight-bold mb-2">
+      Volunteer Experience
+    </h2>
+    <p class="text-body-medium mb-4 text-medium-emphasis">
+      Civic work I have done alongside my professional roles.
+    </p>
+    <WorkingExperience :experiences="EXPERIENCE.volunteer" />
+  </section>
 </template>
