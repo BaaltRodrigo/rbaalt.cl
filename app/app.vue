@@ -1,8 +1,4 @@
-<script setup lang="ts">
-useSeoMeta({
-  ogImage: "https://pub-093c41e779424af8817602feb96299c4.r2.dev/ogImage.jpg",
-});
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <v-app>
