@@ -12,7 +12,7 @@ useSeoMeta({
   ogDescription: pageDescription,
 });
 
-const workingIds = ["Lifebox", "Facilita", "Chilean Army"];
+const workingIds = ["Lifebox", "Facilita"];
 const showCaseExperience = EXPERIENCE.work.filter((exp) =>
   workingIds.includes(exp.name),
 );
